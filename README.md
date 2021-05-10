@@ -1,52 +1,36 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Thomas McQuillan - Artist Website
 
-Welcome USER_NAME,
+This site is designed as an online showcase of my work as a photographer.  A web-presence has become an essential asset to artists, photographers, designers and other creative professionals. It is a space where they can quickly and effectively communicate their ideas and aesthetic style, while also exhibiting a command of their chosen discipline. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+There exists an ever-growing list of templates and subscription services that can be utilised to build personal websites, including Squarespace, WordPress, Wix etc. These are typically built upon a catalogue of existing templates, which are nicely designed, responsive and undeniably convenient. However, they carry the risk of your site appearing similar to others, maybe a little generic and lacking impact. In recent years social media has presented itself as a fertile channel for businesses and creative professionals to market themselves and reach a wider audience than what was previously possible. This democratisation of advertising has been transformational for individuals and small businesses, as it is very often cheap or free and makes it easier to reach your target market or demographic. 
 
-## Gitpod Reminders
+Instagram has become a dominant platform in the online photo-sharing scene, with many photographers assuming that having an Instagram account renders a stand-alone website unnecessary or superfluous.  Though despite Instagram’s immense popularity and image-centric structure - the platform could be considered as more like a ‘tasting-plate’.  A safe, accessible space for users to discover and get a feel for a photographer or artist’s work. However, the platform doesn’t encourage staying for a longer look, with the user quickly whisked away to the photo-stream of some other artist/company/influencer on the giddy ferris-wheel of Instagram’s click-happy algorithms. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+By contrast, my website is designed as a space for visitors to come and view some of my best work, in a layout custom built to show the photographs in their best light. Opting for quality over quantity, I have curated a smaller series from some of my best work and rejected instagram’s endless 3-column grid, preferring to allow the images room to breath. It is hoped that this will encourage a calmer pace, allowing them to really engage with the content. Likewise, the navigation bar and menus are always easily accessible and intuitive, but also styled to be unobtrusive and understated.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+##UX
 
-Another blue button should appear to click: _Open Browser_.
+###User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a visitor to this site I want/need/expect:
 
-A blue button should appear to click: _Make Public_,
+1.To be greeted with a striking, thought-provoking or otherwise interesting photograph that makes me want to stay and see more.
 
-Another blue button should appear to click: _Open Browser_.
+2.For there to be immediate evidence that I am in the place that I intended, namely - at Thomas McQuillan’s website, visible in the form of a name or logo in the navigation bar / header.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+3.For there to be a simple, refined and considered layout to provide a calm and pleasing viewing experience.
 
-To log into the Heroku toolbelt CLI you can use:
+4.To arrive at a website that is intuitive to use, where all navigation menus and links are both easily accessible and function correctly.
 
-`heroku login -i`
+4.As a tablet or desktop user I would like the opportunity to view the photographs at an adequate scale and resolution to allow me to inspect and appreciate more of the photographs’ details and nuances than is possible on sites like Instagram.
 
-If you have Multi-Factor Authentication (MFA) enabled then use the API key that was generated for you at [Heroku](https://dashboard.heroku.com/account) as your password.
-This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+5.That any external links or downloadable content such as PDFs will open in a new window or tab so that I don’t accidentally navigate away from the website.
 
-## Updates Since The Instructional Video
+6.To have all text content presented in a balanced and elegant layout, in a typeface that is both clearly legible and consistent with the tone of the photographic content.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+7.For there not to be any visible typos, grammatical errors, or spelling mistakes that may distract from or negatively affect my appreciation of the photographic work.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+8.For the website to display in a balanced layout regardless of what device I am using when navigating to the site. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+9.For the images to load at an appropriate scale and resolution for the device I am on at the time.  This includes the ability to enjoy a larger version of images when on tablets or desktop computers, but equally to save data and deliver faster loading times when on a mobile device.
