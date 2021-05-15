@@ -81,7 +81,7 @@ nav a:hover,
     color: #fff;
 }
 
-.logo a {
+/* .logo a {
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -91,6 +91,23 @@ nav a:hover,
     font-size: 1.3rem;
     background: rgba(50, 86, 112, 0.6);
     box-shadow: 4px 3px 3px rgba(54, 83, 104, 0.98);
+} */
+
+.logo a {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    height: 23px;
+
+    color: black;
+    font-size: 22px;
+    background: white;
+    height: fit-content;
+    width: 166px;
+    font-weight: 500;
+    border-radius: 2px;
+    transition: ease-in opacity(1) .8s;
 }
 
 .menu-content {
@@ -135,7 +152,7 @@ nav a:hover,
 
 .about-nav a {
     color: rgb(255, 255, 255);
-    background: slategray
+    background: slategray;
     box-shadow: none;
 }
 
@@ -143,59 +160,6 @@ nav a:hover,
     collapse menu
 ====--------=----===*/
 
-.menu-content {
-    font-family: 'Oswald', sans-serif; 
-    padding: 0 0 0 50px;
-}
-.collapsible-menu {
-    display: block;
-    position: relative;
-    background-color: pink;
-    padding: 0px 30px;
-    border-bottom: 3px solid #CDE700;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-}
-.collapsible-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-.collapsible-menu a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-}
-
-
-.collapsible-menu label {
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 56px;
-    display: block;
-    cursor: pointer;
-    background: url(eyesicon.svg) no-repeat left center;
-    padding: 10px 0 10px 50px;
-}
-
-input#menu {
-    display: none;
-}
-
-input:checked +label {
-    background-image: url("eyesicon.svg");
-}
-
-#menu-content {
-    max-height: 0;
-    overflow: hidden;
-    font-family: 'Oswald', sans-serif; 
-    padding: 0 0 0 50px;
-}
-/* Toggle Effect */
-input:checked ~ label {
-    background-image: url(close.png);
-}
-input:checked ~ .menu-content {
-    max-height: 100%;
-}
 
 /* Media Queries for Nav Elements */
 
