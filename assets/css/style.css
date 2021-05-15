@@ -28,8 +28,17 @@ html, body {
     background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
     background-size: cover;
     background-color: #fff;
-    z-index: -99;
 }   
+
+.contact-cover-image {
+    width: cover;
+    height: 100%; 
+    min-width: 100vw;
+    position: relative; 
+    background-image: url("https://live.staticflickr.com/5297/5427265869_d2f19f56a0_k.jpg");
+    background-size: cover;
+    background-color: #fff;
+}
 
 /*  typography 
 ====----------====== */
@@ -112,7 +121,7 @@ nav a:hover,
     justify-content: center;
     height: 23px;
     font-size: 1.3rem;
-    background: rgba(50, 86, 112, 0.6);
+    background: rgba(50, 86, 112, 0.8);
     box-shadow: 4px 2px 2px rgba(54, 83, 104, 0.98);
 }
 
@@ -121,13 +130,72 @@ nav a:hover,
     height: 6.4px;
     width: fit-content;
     line-height: 1rem;
-    border-radius: 1%;
+    border-radius: 2%;
+}
+
+.about-nav a {
+    color: rgb(255, 255, 255);
+    background: slategray
+    box-shadow: none;
 }
 
 /*  
     collapse menu
 ====--------=----===*/
 
+.menu-content {
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+}
+.collapsible-menu {
+    display: block;
+    position: relative;
+    background-color: pink;
+    padding: 0px 30px;
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-menu a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.collapsible-menu label {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 56px;
+    display: block;
+    cursor: pointer;
+    background: url(eyesicon.svg) no-repeat left center;
+    padding: 10px 0 10px 50px;
+}
+
+input#menu {
+    display: none;
+}
+
+input:checked +label {
+    background-image: url("eyesicon.svg");
+}
+
+#menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(close.png);
+}
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
 
 /* Media Queries for Nav Elements */
 
