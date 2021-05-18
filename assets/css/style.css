@@ -19,19 +19,46 @@ html, body {
 /*  
     hero / wallpaper
 ====----=-=---------===*/
-
 #hero-background { 
+    display: flex;
     width: cover;
     height: 100%; 
     min-width: 100vw;
+    max-height: 100vh;
     position: fixed;
     /* position: relative;  */
     background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+    background-clip: border-box;
     background-size: cover;
-    background-color: black;
-}   
+    background-color: transparent;
+}
+    /* --- background-image opacity keyframe animation test code below , needs further work----- */
+    /* animation: opacity 12s alternate infinite; */
 
-.hero-fade {
+/* @keyframes opacity {
+        0% {
+            background:url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: cover;
+            opacity: 100%;
+        }
+        40% {
+            background: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: cover;
+            opacity: 100%;
+        }
+        50% {
+            background: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: cover;
+            opacity: 0%;
+        }
+        100% {
+            background: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: cover;
+            opacity: 0%;
+        }
+    } */
+
+/* .hero-fade {
     display: block;
     position: fixed;
     width: 100vw;
@@ -48,26 +75,62 @@ html, body {
             opacity: 0%;
         }
         80% {
-            /* background: rgb(183, 193, 202); */
             background:pink;
             opacity: 0%;
         }
         100% {
-            /* background: rgb(183, 193, 202); */
             background:pink;
             opacity: 100%;
         }
-    }
+    } */
 
 .contact-cover-image {
     width: cover;
     height: 100%; 
     min-width: 100vw;
-    position: relative; 
+    position: fixed; 
     background-image: url("https://live.staticflickr.com/5297/5427265869_d2f19f56a0_k.jpg");
     background-size: cover;
-    background-color: #fff;
 }
+
+.hero-fade {
+    display: block;
+    position: fixed;
+    width: 120vw;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    /* background-size: cover; */
+    background-clip: border-box;
+    background-image: url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+    background-repeat: no-repeat;
+    background-color: black;
+    animation: opacity 4s alternate infinite;
+}
+
+@keyframes opacity {
+        0% {
+            background:url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+            background-size: 100vw;
+            opacity: 0%;
+        }
+        40% {
+            background:url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+            background-size: 100vw;
+            opacity: 0%;
+        }
+        50% {
+            background:url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+            background-size: 100vw;
+            opacity: 100%;
+        }
+        100% {
+            background:url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+            background-size: 100vw;
+            opacity: 100%;
+        }
+    }
+
 
 /*  typography 
 ====----------====== */
@@ -84,8 +147,10 @@ nav {
 nav a:hover,
 .nav-menu li a:hover {
     color: black;
-    background: rgba(135, 195, 238, 0.66);
+    /* background: rgba(135, 195, 238, 0.66); */
+    background: none;
     transition: ease-in-out 5ms;
+    text-decoration: none;
 }
 
 .nav-links li {

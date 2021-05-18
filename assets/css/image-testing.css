@@ -72,12 +72,13 @@
     color: darkslategrey;
 }
 
-.nav-collapse-container .nav-item {
+/* .nav-collapse-container .nav-item {
     position: relative;
     margin-right: 0px;
     padding: 0;
     text-align: right;
-}
+    border: 1px solid orange;
+} */
 
 .navbar-custom .navbar-toggler {
     display: inline-flex;
@@ -86,6 +87,8 @@
     padding: 0;
     border: none;
     color: rgb(183, 193, 202);
+    width: 2rem;
+    height: 2rem;
     /* border: 1px solid orange; */
 }
 
