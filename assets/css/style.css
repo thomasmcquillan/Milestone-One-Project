@@ -32,57 +32,6 @@ html, body {
     background-size: cover;
     background-color: transparent;
 }
-    /* --- background-image opacity keyframe animation test code below , needs further work----- */
-    /* animation: opacity 12s alternate infinite; */
-
-/* @keyframes opacity {
-        0% {
-            background:url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: cover;
-            opacity: 100%;
-        }
-        40% {
-            background: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: cover;
-            opacity: 100%;
-        }
-        50% {
-            background: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: cover;
-            opacity: 0%;
-        }
-        100% {
-            background: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: cover;
-            opacity: 0%;
-        }
-    } */
-
-/* .hero-fade {
-    display: block;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-color: black;
-    background-clip: border-box;
-    animation: opacity 9s alternate infinite;
-}
-
-@keyframes opacity {
-        0% {
-            background: rgb(183, 193, 202);
-            opacity: 0%;
-        }
-        80% {
-            background:pink;
-            opacity: 0%;
-        }
-        100% {
-            background:pink;
-            opacity: 100%;
-        }
-    } */
 
 .contact-cover-image {
     width: cover;
@@ -100,27 +49,26 @@ html, body {
     height: 100vh;
     min-height: 100vh;
     max-height: 100vh;
-    /* background-size: cover; */
     background-clip: border-box;
-    background-image: url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+    background-image: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg");
     background-repeat: no-repeat;
     background-color: black;
-    animation: opacity 4s alternate infinite;
+    animation: opacity 10s alternate infinite;
 }
 
 @keyframes opacity {
         0% {
-            background:url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg");
             background-size: 100vw;
             opacity: 0%;
         }
         40% {
-            background:url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg");
             background-size: 100vw;
             opacity: 0%;
         }
         50% {
-            background:url("/workspace/Milestone-One-Project/assets/images/springmuscle.jpeg");
+            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg");
             background-size: 100vw;
             opacity: 100%;
         }
@@ -147,7 +95,6 @@ nav {
 nav a:hover,
 .nav-menu li a:hover {
     color: black;
-    /* background: rgba(135, 195, 238, 0.66); */
     background: none;
     transition: ease-in-out 5ms;
     text-decoration: none;
@@ -175,25 +122,12 @@ nav a:hover,
     color: #fff;
 }
 
-/* .logo a {
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    justify-content: center;
-    height: 23px;
-    font-size: 1.3rem;
-    background: rgba(50, 86, 112, 0.6);
-    box-shadow: 4px 3px 3px rgba(54, 83, 104, 0.98);
-} */
-
 .logo a {
     display: flex;
     flex-direction: column;
     width: fit-content;
     justify-content: center;
     height: 23px;
-
     color: black;
     font-size: 22px;
     background: white;
