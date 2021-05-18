@@ -20,7 +20,6 @@
     transition: all 5ms ease-in-out;
 }
 
-
 .navbar-custom .navbar-nav,
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
@@ -197,5 +196,6 @@ div {
 }
 
 .container-fluid {
-    padding-top: 200px;
+    padding-top: 260px;
+    width: 96vw;
 }
