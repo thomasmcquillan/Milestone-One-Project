@@ -10,6 +10,70 @@ html, body {
     background-color: #fff;
 }
 
+/*  
+    hero / wallpaper
+====----=-=---------===*/
+
+#hero-background { 
+    display: flex;
+    width: cover;
+    height: 100%; 
+    min-width: 100vw;
+    max-height: 100vh;
+    position: fixed;
+    background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+    background-clip: border-box;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.contact-cover-image {
+    width: cover;
+    height: 100%; 
+    min-width: 100vw;
+    position: fixed; 
+    background-image: url("https://live.staticflickr.com/5297/5427265869_d2f19f56a0_k.jpg");
+    background-size: cover;
+}
+
+.hero-fade {
+    display: flex;
+    /* position: fixed; */
+    width: cover;
+    min-width: 100vw;
+    height: 100%;
+    /* min-height: 100vh; */
+    
+    background-clip: border-box;
+    background-image: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    animation: opacity 8s alternate infinite;
+}
+
+@keyframes opacity {
+        0% {
+            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
+            background-size: 100vw;
+            opacity: 0%;
+        }
+        40% {
+            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
+            background-size: 100vw;
+            opacity: 0%;
+        }
+        50% {
+            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
+            background-size: 100vw;
+            opacity: 100%;
+        }
+        100% {
+            background:url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
+            background-size: 100vw;
+            opacity: 100%;
+        }
+    }
+
 nav {
     width: 100vw;
 }
