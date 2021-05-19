@@ -33,6 +33,7 @@
 }
 
 .navbar-custom .navbar-brand {
+    font-size: 1.4rem;
     margin-left: 9px;
 }
 
@@ -75,14 +76,6 @@
     color: darkslategrey;
 }
 
-/* .nav-collapse-container .nav-item {
-    position: relative;
-    margin-right: 0px;
-    padding: 0;
-    text-align: right;
-    border: 1px solid orange;
-} */
-
 .navbar-custom .navbar-toggler {
     display: inline-flex;
     justify-content: flex-end;
@@ -120,7 +113,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
         background: #fff;
     }
     
@@ -133,28 +126,17 @@
         width: 100vw;
         font-weight: 500;
         /* background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%); */
-    }
-    
-        /* display: block; */
-        /* width: 60px;
-        height: 60px;
-        line-height: 66px;
-        border-radius: 50%;
-        background: none;
-        margin: 0 auto;
-    } */
+    }  
 
 .navbar-custom .navbar-nav .nav-link a {
     width: fit-content;
-    height: 80px;
+    height: 6rem;
     margin: auto;
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-weight: 400;
     display: inline-block;
     text-transform: uppercase;
 /* ---text-shadow attribute read about here: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow, then modified to suit my tastes---  */
-    /* text-shadow: #FC0 1px 0 10px; */
-    /* text-shadow: rgb(166, 225, 255) 1px 0 10px; */
-    /* text-shadow: rgb(166, 225, 255) 1px 0 3px; */
     text-shadow: rgba(246, 145, 158, 0.259) 2px 1px 3px;
 /* "background-clip: text;" researched in article by Chris Coyier at https://css-tricks.com/almanac/properties/b/background-clip/
  then modified to suit my project's aesthetic, using a linear gradient I created from one of my photographs using Adobe Colors */
@@ -165,7 +147,6 @@
 }
 
 .navbar-custom .navbar-nav .nav-link a:hover {
-    /* text-shadow: #FC0 1px 0 12px; */
     text-shadow: rgba(156, 215, 233, 0.8) 2px 1px 3px;
     background: linear-gradient(to right, #8FA975 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #89B3C0 100%);
     background-clip: text;
