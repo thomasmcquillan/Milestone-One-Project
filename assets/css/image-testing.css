@@ -5,6 +5,23 @@
     background-color: #fff;
 }
 
+/* custom styled scrollbars, discovered in article by Sara Cope @ https://css-tricks.com/almanac/properties/s/scrollbar/  */
+
+body::-webkit-scrollbar {
+    width: 0.20rem;
+    height: 0.20rem;
+    }
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
+    }
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
+    }
+
+/* background-slider */
+
 #hero-background { 
     width: cover;
     height: 100%; 
@@ -101,9 +118,9 @@
         display: block;
         z-index: 999;
         background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
     nav .navbar-nav {
@@ -121,7 +138,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 66vh;
+        height: 44vh;
         background: #fff;
     }
     
@@ -129,38 +146,37 @@
         display: flex;
         flex-direction: column;
         align-items: space-between;
-        padding: 20px 0 20px 0;
+        padding: 16px 0 16px 0;
         text-align: center;
         width: 100vw;
-        font-weight: 500;
-        /* background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%); */
+        font-weight: 400;
     }  
 
-.navbar-custom .navbar-nav .nav-link a {
-    width: fit-content;
-    height: 6rem;
-    margin: auto;
-    font-size: 4rem;
-    font-weight: 400;
-    display: inline-block;
-    text-transform: uppercase;
-/* ---text-shadow attribute read about here: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow, then modified to suit my tastes---  */
-    text-shadow: rgba(246, 145, 158, 0.259) 2px 1px 3px;
-/* "background-clip: text;" researched in article by Chris Coyier at https://css-tricks.com/almanac/properties/b/background-clip/
- then modified to suit my project's aesthetic, using a linear gradient I created from one of my photographs using Adobe Colors */
-    background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    .navbar-custom .navbar-nav .nav-link a {
+        width: fit-content;
+        height: 6rem;
+        margin: auto;
+        font-size: 2rem;
+        font-weight: 400;
+        display: inline-block;
+        text-transform: uppercase;
+    /* ---text-shadow attribute read about here: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow, then modified to suit my tastes---  */
+        text-shadow: rgba(246, 145, 158, 0.259) 2px 1px 3px;
+    /* "background-clip:text;" researched in article by Chris Coyier at https://css-tricks.com/almanac/properties/b/background-clip/
+    then modified to suit my project's aesthetic, then applying a linear gradient I created from one of my photographs using Adobe Colors */
+        background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-.navbar-custom .navbar-nav .nav-link a:hover {
-    text-shadow: rgba(156, 215, 233, 0.8) 2px 1px 3px;
-    background: linear-gradient(to right, #8FA975 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #89B3C0 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    .navbar-custom .navbar-nav .nav-link a:hover {
+        text-shadow: rgba(156, 215, 233, 0.8) 2px 1px 3px;
+        background: linear-gradient(to right, #8FA975 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #89B3C0 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
     .navbar-custom .navbar-toggler {
         position: fixed;
@@ -187,17 +203,90 @@
         display: none;
     }
     .navbar-nav {
-        margin-right: 3.5vw;
+        position: fixed;
+        width: 27vw;
+        margin-right: 3vw;
+        height: 30px;
         background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
+    }
+
+    .navbar-custom .navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 4vw;
+        right: 2vw;
+        width: 27vw;
+        width: 333px;
+    }
+
+    .navbar-custom .navbar-brand {
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        top: 3.6vw;
+        left: 4vw;
+        font-size: 1.3rem;
+        font-weight: 300;
+        
+        /* width: 333px; */
+        width: 200px;
+        z-index: 999;
+        height: 30px;
+       color: darkslategrey;
+       background: #fff;
+    }
+
+    .navbar-custom .navbar-brand a {
+        display: block;
+        background: #fff;
+        z-index: 1001;
+    }
+
+    .navbar-brand-box {
+        display: flex;
+        /* justify-content: flex-end; */
+        position: fixed;
+        top: 4vw;
+        left: 4vw;
+        width: 220px;
+        height: 30px;
+        background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
+    }
+
+    .navbar-custom .navbar-nav .nav-item a {
+        font-size: 1.1rem;
+    }
+
+     .navbar-custom .navbar-nav .nav-item a:hover {
+        color: #fff;
+        background-color: rgb(103, 102, 102);
+    }
+
+    .nav-top {
+        margin: 0 7vw 0 7vw;   
     }
 }
 
 /* <!-- Photo section --> */
 
 .container-fluid {
-    width: 97vw;
+    width: auto;
 }
 
 .photo-spacer {
-    padding-top: 28vw;
+    padding: 18vw 3vw 18vw 3vw;
+    /* padding-top: 18vw;
+    padding-bottom: 18vw; */
+}
+
+.mx-auto img {
+    margin: auto 3vw 9vw 3vw;
+    width: calc(100vw - 6vw);
+    max-width: 1000px;
+}
+
+.gallerytest {
+    display: grid;
+    place-items: center;
 }
