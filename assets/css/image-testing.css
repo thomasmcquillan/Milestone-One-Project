@@ -96,11 +96,19 @@
     nav {
         background-color: rgba(248, 248, 248, 0.724);
     }
+
+    .navbar-custom .navbar-brand {
+        display: block;
+        z-index: 999;
+        background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
     
     nav .navbar-nav {
         display: flex;
         justify-items: center;
-        padding: 0;
         width: 100vw;
         height: 100vh;
         background-color : rgba(248, 248, 248, 0.724);
@@ -113,7 +121,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 80vh;
+        height: 66vh;
         background: #fff;
     }
     

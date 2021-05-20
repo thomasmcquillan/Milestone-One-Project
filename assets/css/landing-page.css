@@ -6,15 +6,15 @@ html, body {
     font-size: 18px;
     font-family: 'freight-sans-pro', sans-serif;
     font-weight: 300;
-    color: slategrey;
-    background-color: #fff;
+    color: white;
+    background-color:#fff;
 }
 
-/*  
-    hero / wallpaper
-====----=-=---------===*/
+ 
+    /* hero / wallpaper
+=======----=-=---------=== */
 
-#hero-background { 
+/* #hero-background { 
     display: flex;
     width: cover;
     height: 100%; 
@@ -25,19 +25,48 @@ html, body {
     background-clip: border-box;
     background-size: cover;
     background-color: transparent;
-}
+} */
 
-.contact-cover-image {
+.hero-background-fade { 
+    display: flex;
     width: cover;
     height: 100%; 
     min-width: 100vw;
-    position: fixed; 
-    background-image: url("https://live.staticflickr.com/5297/5427265869_d2f19f56a0_k.jpg");
+    max-height: 100vh;
+    position: fixed;
+    background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+    background-clip: border-box;
     background-size: cover;
+    background-color: transparent;
+    animation: opacity(0) 8s alternate infinite;
 }
 
+@keyframes opacity {
+        0% {
+            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: 100vw;
+            opacity: 100%;
+        }
+        40% {
+            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: 100vw;
+            opacity: 100%;
+        }
+        50% {
+            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: 100vw;
+            opacity: 0%;
+        }
+        100% {
+            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
+            background-size: 100vw;
+            opacity: 0%;
+        }
+    }
+
 .hero-fade {
-    display: flex;
+    /* display: flex; */
+    display: block;
     /* position: fixed; */
     width: cover;
     min-width: 100vw;
@@ -48,7 +77,7 @@ html, body {
     background-image: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
     background-repeat: no-repeat;
     background-color: transparent;
-    animation: opacity 8s alternate infinite;
+    animation: opacity(1) 8s alternate infinite;
 }
 
 @keyframes opacity {
@@ -74,8 +103,18 @@ html, body {
         }
     }
 
+.contact-cover-image {
+    width: cover;
+    height: 100%; 
+    min-width: 100vw;
+    position: fixed; 
+    background-image: url("https://live.staticflickr.com/5297/5427265869_d2f19f56a0_k.jpg");
+    background-size: cover;
+}
+
 nav {
-    width: 100vw;
+    width: 200px;
+    height: 100vh;
 }
 
 .logo {
@@ -102,11 +141,12 @@ nav {
 }
 
 .navbar {
-    display: flex;
+    /* display: flex; */
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 33vw;
     height: 100vh;
     flex-direction: column;
 }
@@ -120,6 +160,7 @@ nav {
     height: 100%;
     width: 100vw;
     list-style: none;
+       background-color: #fff;
     padding: 0;
     margin: 18vh auto auto 16px;
 /* border for layout positioning, remove later */
