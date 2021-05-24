@@ -1,193 +1,132 @@
-html, body { 
-    margin: 0;
-    padding: 0;
-    width: 100vw; 
-    height: 100vw; 
-    font-size: 18px;
-    font-family: 'freight-sans-pro', sans-serif;
-    font-weight: 300;
-    color: white;
-    background-color:#fff;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    text-decoration: none;
 }
 
- 
-    /* hero / wallpaper
-=======----=-=---------=== */
+/* custom styled scrollbars, discovered in article by Sara Cope @ https://css-tricks.com/almanac/properties/s/scrollbar/  */
 
-/* #hero-background { 
-    display: flex;
-    width: cover;
-    height: 100%; 
-    min-width: 100vw;
-    max-height: 100vh;
-    position: fixed;
-    background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-    background-clip: border-box;
-    background-size: cover;
-    background-color: transparent;
-} */
-
-.hero-background-fade { 
-    display: flex;
-    width: cover;
-    height: 100%; 
-    min-width: 100vw;
-    max-height: 100vh;
-    position: fixed;
-    background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-    background-clip: border-box;
-    background-size: cover;
-    background-color: transparent;
-    animation: opacity(0) 8s alternate infinite;
-}
-
-@keyframes opacity {
-        0% {
-            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: 100vw;
-            opacity: 100%;
-        }
-        40% {
-            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: 100vw;
-            opacity: 100%;
-        }
-        50% {
-            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: 100vw;
-            opacity: 0%;
-        }
-        100% {
-            background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg");
-            background-size: 100vw;
-            opacity: 0%;
-        }
+body::-webkit-scrollbar {
+    width: 0.20rem;
+    height: 0.20rem;
     }
 
-.hero-fade {
-    /* display: flex; */
-    display: block;
-    /* position: fixed; */
-    width: cover;
-    min-width: 100vw;
-    height: 100%;
-    /* min-height: 100vh; */
-    
-    background-clip: border-box;
-    background-image: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
-    background-repeat: no-repeat;
-    background-color: transparent;
-    animation: opacity(1) 8s alternate infinite;
-}
-
-@keyframes opacity {
-        0% {
-            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
-            background-size: 100vw;
-            opacity: 0%;
-        }
-        40% {
-            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
-            background-size: 100vw;
-            opacity: 0%;
-        }
-        50% {
-            background: url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
-            background-size: 100vw;
-            opacity: 100%;
-        }
-        100% {
-            background:url("https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/winter01.jpeg");
-            background-size: 100vw;
-            opacity: 100%;
-        }
+body::-webkit-scrollbar-track {
+    background: lightslategrey;
     }
 
-.contact-cover-image {
-    width: cover;
-    height: 100%; 
-    min-width: 100vw;
-    position: fixed; 
-    background-image: url("https://live.staticflickr.com/5297/5427265869_d2f19f56a0_k.jpg");
-    background-size: cover;
-}
+body::-webkit-scrollbar-thumb {
+    background: slategrey;
+    }
 
-nav {
-    width: 200px;
-    height: 100vh;
-}
+/* hero background image  */
 
-.logo {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    font-weight: 400;
-    margin: 16px auto auto 16px;
-    font-size: 1.5rem;
-}
-
-.logo-text {
-    display: block;
-    text-align: left;
-    position: fixed;
-    top: 0;
-    left: 12px;
-    background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
-    background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-
-.navbar {
-    /* display: flex; */
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 33vw;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.navbar-nav {
+.hero-banner-landing { 
     display: flex;
-    position: relative;
     flex-direction: column;
-    align-items: flex-start;
-    /* justify-items: flex-start; */
-    height: 100%;
-    width: 100vw;
-    list-style: none;
-       background-color: #fff;
-    padding: 0;
-    margin: 18vh auto auto 16px;
-/* border for layout positioning, remove later */
-    /* border: 1px solid orange; */
-}
-
-.nav-item {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/5087/5374560217_ef10d43e0d_o.jpg") no-repeat center center scroll;
+    background-size: cover !important;
 }
 
-.nav-link {
-  display: block;
-  position: relative;
-  width: 100%;
-  align-items: center;
-  width: 100vw;
-  height: 3.5rem;
-  color: lightslategrey;
-  text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
+.hero-banner-index { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("/workspace/secret.sauce/assets/images/springmuscle.jpeg") no-repeat center center scroll;
+    background-size: cover !important;
 }
 
-.nav-link:hover {
-  filter: grayscale(0%) opacity(1);
-  background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
-  background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero-banner-about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url("https://live.staticflickr.com/7148/6780308101_741d3e70e9_c.jpg") no-repeat center center scroll;
+    background-size: cover !important;
+}
+
+.mono-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 269px;
+    width: 269px;
+    border-radius: 50%;
+    /* background: rgba(214, 214, 214, 0.404); */
+    background: none;
+    text-decoration: none;
+}
+
+.thom-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 296px;
+    width: 296px;
+    border-radius: 50%;
+    /* background: rgba(214, 214, 214, 0.404); */
+    background: none;
+    text-decoration: none;
+}
+
+.mono-landing:hover,
+.thom-landing:hover {
+    background-color: rgba(245, 255, 250, 0.28);
+    box-shadow: 2px 4px 4px rgba(95, 95, 95, 0.3);
+    transition: all .2s ease-out;
+    transition: background-color .06s ease-in-out;
+}
+
+.mono-landing:hover a,
+.thom-landing:hover a {
+    text-decoration: none;
+    text-shadow: 3px 6px 4px rgba(168, 166, 166, 0.8);
+}
+
+h1, h2, h3, h4 {
+    font-style: normal;
+    font-weight: bold;
+    color: #eee;
+    font-size: 12vmin;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    text-shadow: 1px 2px 4px rgba(95, 95, 95, 0.6);  
+    /* margin-bottom: 38px;     */
+    background: transparent;
+    text-decoration: none;
+    -webkit-text-stroke: 1px grey;
+    -webkit-text-fill-color: #eee;
+}
+
+h2 {
+    font-size: 10.6vmin;
+    -webkit-text-stroke: 1.3px grey;
+    -webkit-text-fill-color: #eee;
+}
+
+h3 {
+    font-size: 10.10vmin;
+}
+
+h4 {
+    font-size: 7.58vmin;  
 }
