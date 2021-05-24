@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 3px 6px 4px rgba(168, 166, 166, 0.8);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-style: normal;
     font-weight: bold;
     color: #eee;
@@ -151,6 +151,11 @@ h4 {
     font-size: 7.58vmin;  
 }
 
+h5 {
+    font-size: 5.9vmin;
+}
+}
+
 p {
     color: darkslategrey;
     background-color: transparent;
@@ -168,6 +173,7 @@ p {
     place-items: center;
 }
 
-.contact-text {
-    text-align: center; 
+.contact-text p {
+    text-align: center;
+    color: #eee;
 }
