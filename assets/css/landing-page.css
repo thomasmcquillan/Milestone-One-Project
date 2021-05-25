@@ -180,76 +180,60 @@ p {
 
 /* Contact Page form */
 
-.form-dark .md-form label {
-  color: #fff;
-}
-.form-dark input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #fff;
-  -webkit-box-shadow: 0 1px 0 0 #fff;
-  box-shadow: 0 1px 0 0 #fff;
-}
-.form-dark input[type=text]:focus:not([readonly]) + label {
-  color: #fff;
-}
-.form-dark textarea.md-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #fff;
-  box-shadow: 0 1px 0 0 #fff;
-  color: #fff;
-}
-/* .form-dark textarea.md-textarea  {
-  color: rgba(245, 255, 250, 0.28);
-}
-.form-dark .form-control, .form-dark .form-control:focus {
-  color: rgba(245, 255, 250, 0.28);
-}
-.form-dark .md-form textarea.md-textarea:focus:not([readonly])+label {
-  color: rgba(245, 255, 250, 0.28);
-} */
-
-/* custom h5 style for form */
-
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    width: 74vw;
+    max-width: 888px;
+    margin: 18vh 0 18vh 0;
+    border-radius: 14%;
+    background-color: rgba(83, 83, 83, 0.301);
 }
 
+/* .form-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 24px;
+} */
+
 #contact-heading {
-    font-size: 2.4rem;
-    padding: 1rem 0 2rem 0;
+    font-size: 3.2rem;
+    padding: 2rem 0 2rem 0;
+     -webkit-text-stroke: 1px darkslategrey;
 }
 
 .contact-blurb {
+    display: inline-flex;
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    padding: 0 4vw 1.8rem 4vw;
+    padding: 1.5rem 4vw 2rem 4vw;
     /* font-size: 1.2rem; */
-    font-size: 2.8vmin;
-    background-color: rgba(83, 83, 83, 0.3);
-    border-radius: 6px;
-    height: 88px;
-    
+    /* font-size: 2.7vmin; */
+    font-size: 18px;
+    background-color: rgba(83, 83, 83, 0.66);
+    border-radius: 24px;
+    height: auto;
 }
 
 .form-dark {
     display: flex;
     flex-direction: column;
     justify-items: space-evenly;
-}
-
-/* form with shadow and placeholder snippet css */
-
-.shadow-textarea textarea.form-control::placeholder {
-    font-weight: 300;
-}
-.shadow-textarea textarea.form-control {
-    padding-left: 0.8rem;
+    /* border: 1px solid red; */
 }
 
 #contact-form-message,
 .md-form input,
 .btn-light {
-    background-color: rgba(245, 255, 250, 0.77);
+    background-color: rgba(245, 255, 250, 0.66);
+    border-radius: 24px;
     color: grey;
 }
