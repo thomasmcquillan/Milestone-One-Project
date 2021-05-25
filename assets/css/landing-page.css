@@ -72,17 +72,9 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     overflow: hidden;
     /* background: url("https://live.staticflickr.com/6131/5972460380_69aca96286_c.jpg") no-repeat center center scroll; */
-    background: url(https://live.staticflickr.com/6131/5972460380_69aca96286_c.jpg) no-repeat center center fixed;
+    background: url(/workspace/Milestone-One-Project/assets/images/IMG_0369.jpg) no-repeat center center fixed;
     background-size: cover !important;
 }
-
-/* html { 
-  background: url(images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
 
 .mono-landing {
     display: flex;
@@ -185,23 +177,11 @@ p {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    width: 74vw;
-    max-width: 888px;
-    margin: 18vh 0 18vh 0;
-    border-radius: 14%;
-    background-color: rgba(83, 83, 83, 0.301);
+    width: 100vw;
+    /* max-width: 100vh; */
+    /* border-radius: 18%; */
+    /* background-color: rgba(83, 83, 83, 0.44); */
 }
-
-/* .form-wrapper {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    border-radius: 24px;
-} */
 
 #contact-heading {
     font-size: 3.2rem;
@@ -214,11 +194,11 @@ p {
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    padding: 1.5rem 4vw 2rem 4vw;
+    padding: 1rem 4vw 1.5rem 4vw;
     /* font-size: 1.2rem; */
     /* font-size: 2.7vmin; */
     font-size: 18px;
-    background-color: rgba(83, 83, 83, 0.66);
+    background-color: rgba(83, 83, 83, 0.55);
     border-radius: 24px;
     height: auto;
 }
@@ -233,7 +213,6 @@ p {
 #contact-form-message,
 .md-form input,
 .btn-light {
-    background-color: rgba(245, 255, 250, 0.66);
+    background-color: rgba(245, 255, 250, 0.88);
     border-radius: 24px;
-    color: grey;
 }

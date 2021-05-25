@@ -12,10 +12,10 @@
         type="text/css"/> 
     <!--- Linked Fonts: Adobe freight-sans-pro, sans-serif --->
     <link rel="stylesheet" href="https://use.typekit.net/cav8jtj.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="https://thomasmcquillan.github.io/Milestone-One-Project/assets/css/landing-page.css" type="text/css"/>
     <!-- Local custom styles for testing (delete before final deployment) -->
     <link rel="stylesheet" href="assets/css/landing-page.css" type="text/css"/>    
-    <!-- Custom styles -->
-    <!-- <link rel="stylesheet" href="https://thomasmcquillan.github.io/Milestone-One-Project/assets/css/style.css" type="text/css"/> -->
     
     <title>Thomas McQuillan</title>
 </head>
@@ -24,23 +24,22 @@
       
         <div class="hero-banner-contact">
             <div class="contact-wrapper">
-                <!-- <div class="form-wrapper"> -->
                     <div class="row">
                             <div class="col-1 col-sm-2"></div>
                             <div class="col-10 col-sm-8">
-                                <h5 class="mb-4 mt-4" id="contact-heading">Contact</h5>
-                                <p class="contact-blurb">To enquire about collaboration, commissions or print-sales please use the form below.
+                                <h5 class="mb-4 mt-4" id="contact-heading">let's talk..</h5>
+                                <p class="contact-blurb">For enquiries about collaboration, commissions or ordering prints please use the form below.
                             </div>
                             <div class="col-1 col-sm-2"></div>
                         </div>
                     
                 
-                    <!-- Section: Contact Form; "form dark" snippet borrowed then heavily modified from https://mdbootstrap.com/docs/b4/jquery/forms/textarea/ -->
-                    <section class="form-dark col-10 col-md-8 mb-5">
+                    <!-- Section: Contact Form; "form dark" snippet borrowed and heavily modified from https://mdbootstrap.com/docs/b4/jquery/forms/textarea/ -->
                     
                     <!-- <div class="card card-image" style="background-image: url('/workspace/Milestone-One-Project/assets/images/about-hero.jpg');"> -->
 
-                    
+                    <form class="form-dark col-10 col-md-8 mb-5" method="POST" action="https://formdump.codeinstitute.net/">
+
                         <div class="md-form mt-4 mb-2">
                             <input type="text" placeholder="Name" id="contact-name" class="form-control" required/>
                         </div>
@@ -53,11 +52,10 @@
                             <!-- <label for="contact-form-subject">>></label> -->
                         </div>
                         <div class="md-form mt-4 mb-4">
-                            <textarea id="contact-form-message" placeholder="Message" class="md-textarea form-control" rows="5" required></textarea>
+                            <textarea id="contact-form-message" placeholder="Message" class="md-textarea form-control" required rows="5"></textarea>
                             <!-- <label for="contact-form-message">>></label> -->
                         </div>
-
-                        <!--Grid row-->
+                     
                         <div class="row d-flex align-items-center">
                             <!--Grid column-->
                             <div class="text-center col-12 mt-2 mb-4">
@@ -65,7 +63,6 @@
                             </div>
                             <!--Grid column-->
                         </div>
-                        <!--Grid row-->
 
                         </div>
                     </div>
