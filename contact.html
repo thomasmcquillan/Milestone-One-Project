@@ -25,29 +25,57 @@
     <header></header>
       
         <div class="hero-banner-contact">
+            <!-- Section: Contact Form; "form dark" snippet borrowed then heavily modified from https://mdbootstrap.com/docs/b4/jquery/forms/textarea/ -->
+            <section class="form-dark mb-5"></section>
 
-            <div class="container-fluid center-div contact-text">
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6"> <p>If you wish to enquire about collaboration, commissions or purchasing prints please use the form below.</p>
-                                        <p>For anything else..</p>
-                                        <p>thomas.mcquillan@gmail.com</p></div>
-                    <div class="col-3"></div>
+            <!-- <div class="card card-image" style="background-image: url('/workspace/Milestone-One-Project/assets/images/about-hero.jpg');"> -->
+            <div class="contact-wrapper">
+                <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+
+                <!--Header-->
+                <div class="text-center">
+                    <h5 class="mb-5 mt-4 text-uppercase" id="contact-heading">Contact
                 </div>
-                <div class="row">form goes here..</div>
+                <div class="md-form">
+                    <input type="text" placeholder="Your name" id="form100" class="form-control">
+                    <label for="form100">>></label>
+                </div>
+                <div class="md-form">
+                    <input type="text" placeholder="Your email" id="form101" class="form-control">
+                    <label for="form101">>></label>
+                </div>
+                <div class="md-form">
+                    <input type="text" placeholder="Subject" id="form102" class="form-control">
+                    <label for="form102">>></label>
+                </div>
+                <div class="md-form">
+                    <textarea id="form103" placeholder="Your message here" class="md-textarea form-control" rows="5"></textarea>
+                    <label for="form103">>></label>
+                </div>
+
+                <!--Grid row-->
+                <div class="row d-flex align-items-center">
+                    <!--Grid column-->
+                    <div class="text-center col-md-12 mt-3 mb-2">
+                    <button type="button" class="btn btn-light btn-block btn-rounded z-depth-1">Send</button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+                </div>
             </div>
+
+            <!-- </section> -->
+        </div>
+        <!-- <div class="col-2"></div> -->
+    </div>
+    </section>
+
+            <!-- </div> -->
 
         </div>
 
-        <!-- <div class="container-fluid center-div contact-text">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6"> <p>If you wish to enquire about collaboration, commissions or purchasing prints please use the form below.</p>
-                                    <p>For anything else..</p>
-                                    <p>thomas.mcquillan@gmail.com</p></div>
-                <div class="col-3"></div>
-            </div>
-        </div> -->
 
 <!-- Javascript for bootstrap navbar components -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

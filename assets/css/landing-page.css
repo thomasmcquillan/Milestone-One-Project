@@ -177,3 +177,46 @@ p {
     text-align: center;
     color: #eee;
 }
+
+/* Contact Page form */
+
+.form-dark .md-form label {
+  color: #fff;
+}
+.form-dark input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+}
+.form-dark input[type=text]:focus:not([readonly]) + label {
+  color: #fff;
+}
+.form-dark textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+  color: #fff;
+}
+.form-dark textarea.md-textarea  {
+  color: #fff;
+}
+.form-dark .form-control, .form-dark .form-control:focus {
+  color: #fff;
+}
+.form-dark .md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #fff;
+}
+
+/* custom h5 style for form */
+
+#contact-heading > h5 {
+    font-size: 50pt;
+}
+
+/* form with shadow and placeholder snippet css */
+
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
