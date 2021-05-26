@@ -44,7 +44,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: scroll;
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url(https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg) no-repeat center center scroll;
     background-size: cover !important;
 }
@@ -57,7 +58,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: scroll;
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/7148/6780308101_741d3e70e9_c.jpg") no-repeat center center scroll;
     background-size: cover !important;
 }
@@ -66,13 +68,15 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: scroll;
     /* background: url("https://live.staticflickr.com/6131/5972460380_69aca96286_c.jpg") no-repeat center center scroll; */
-    background: url(https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/contact-chimney.jpg) no-repeat center center fixed;
+    /* background: url(https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/contact-chimney.jpg) no-repeat center center fixed; */
+    background: url(https://live.staticflickr.com/5172/5395399524_61deedc5d8_b.jpg) no-repeat center center fixed; 
     background-size: cover !important;
 }
 
@@ -183,22 +187,46 @@ p {
 }
 
 #contact-heading {
-    font-size: 3.2rem;
-    padding: 3.4rem 0 4rem 0;
-     -webkit-text-stroke: 1.2px rgb(36, 44, 44);
+    font-size: 3.6rem;
+    font-style: italic;
+    padding: 3rem 0 5rem 0;
+    text-shadow:    0 2px 1px rgba(0,0,0,0.09), 
+                    0 4px 2px rgba(0,0,0,0.09), 
+                    0 8px 4px rgba(0,0,0,0.09);
+    -webkit-text-stroke: 1.2px rgb(36, 44, 44);
+}
+
+#contact-form-message,
+.md-form input,
+.contact-blurb,
+.btn-light {
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+                0 4px 2px rgba(0,0,0,0.09), 
+                0 8px 4px rgba(0,0,0,0.09), 
+                0 16px 8px rgba(0,0,0,0.09),
+                0 32px 16px rgba(0,0,0,0.09);
 }
 
 .contact-blurb {
     display: inline-flex;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    background-color: rgba(6,45,78, 0.92);
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "FreightSans Pro";
     font-weight: 300;
-    padding: 1rem 0 1.5rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem 1.4rem 1.4rem 1.4rem;
     margin: 0 2.2vw;
-    font-size: 18px;
-    background-color: rgba(83, 83, 83, 0.55);
-    border-radius: 28px;
+    line-height: 30px;
+    border-radius: 28px 28px 24px 24px;
     height: auto;
+    /* lovely smooth box-shadow snippet by Tobias Ahlin at: https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+              0 4px 2px rgba(0,0,0,0.09), 
+              0 8px 4px rgba(0,0,0,0.09), 
+              0 16px 8px rgba(0,0,0,0.09),
+              0 32px 16px rgba(0,0,0,0.09);
 }
 
 .form-dark {
@@ -211,10 +239,30 @@ p {
 #contact-form-message,
 .md-form input,
 .btn-light {
-    background-color: rgba(245, 255, 250, 0.88);
+    /* background-color: rgba(245, 255, 250, 0.88); */
+    background-color: rgba(255, 255, 255, 0.925);
     border-radius: 24px;
+    padding: 0 1rem 0 1rem;
 }
 
 #contact-form-message {
-    border-radius: 28px;
+    padding-top: 5px;
+    border-radius: 24px 24px 28px 28px;
+}
+
+.btn-light {
+    display: grid;
+    place-content: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.btn-light:hover {
+    transition: ease all 30ms;
+    font-weight: 500;
+    color: white;
+    border: 3px solid white;
+    background: rgba(255, 255, 255, 0.22);
 }
