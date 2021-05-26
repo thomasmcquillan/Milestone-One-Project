@@ -179,12 +179,12 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 84vh;
-    width: 80vw;
-    max-width: 700px;
+    height: 90vh;
+    width: 90vw;
+    max-width: 550px;
     background-color: rgba(255, 255, 255, 0.22);
     border-radius: 50px;
-    margin: 8vh 0;
+    margin: 5vh 5vw;
 }
 
 #contact-heading {
@@ -262,9 +262,10 @@ p {
 }
 
 .btn-light:hover {
-    transition: ease all 30ms;
+    transition: ease-in all 30ms;
     font-weight: 500;
     color: #fff;
     border: 2px solid white;
     background: rgba(255, 255, 255, 0.11);
+    border-radius: 25%;
 }
