@@ -22,23 +22,87 @@
 </head>
 <body>
 
-<header>
-        <!-- Navbar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- do i need this: -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- reverting to Bootstrap CSS 4.6 for stability, assuming it works-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- extra styling and libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css"/> 
+    <!--- Linked Fonts: Adobe freight-sans-pro, sans-serif --->
+    <link rel="stylesheet" href="https://use.typekit.net/cav8jtj.css">
+    <!-- Local custom styles for testing (delete before final deployment) -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>    
+    <!-- Custom styles -->
+    <!-- <link rel="stylesheet" href="https://thomasmcquillan.github.io/Milestone-One-Project/assets/css/style.css" type="text/css"/> -->
+    
+    <title>Thom</title>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-nav">
+        <div class="thomono-logo">
+            <div class="thom-ono"><h1></h1></div>
+            <div class="tho-mono"><h1>_thom*</h1></div>
+        </div>
+    <div class="nav-links">
+        <ul class="nav-items">
+            <li><h5>projects</h5></li>
+            <li><h5>about</h5></li>
+            <li><h5>prints</h5></li>
+            <li><h5>contact</h5></li>
+        </ul>
+    </div>
+    <div class="social-links">
+        <h6>instagram</h6>
+    </div>
+    </div>
+</div>
+<div class="row content-page-right container-fluid">
+        <div class="col-12 col-md-12 mx-auto py-4"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
+        <div class="col-12 col-md-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_01.jpg" class="img-fluid" alt="snow covered car"></div>
+        <div class="col-12 col-sm-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_02.jpg" class="img-fluid" alt="greyscale photograph of frozen puddle"></div>
+        <div class="col-12 col-sm-10 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_03.jpg" class="img-fluid" alt="black building under pink sunset in winter"></div>
+        <div class="col-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_04.jpg" class="img-fluid" alt="vines growing up side of house"></div>
+        <div class="col-12 col-md-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/pinochio.jpeg" class="img-fluid" alt="small child looking up at large pinochio sculpture"></div>
+    </div>
+
+
+<!-- Javascript for bootstrap navbar components -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+<!-- <header>
+       
         <div class="nav-wrap">
-        <nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top">
-        <!-- div placed behind navbar-brand-box and colored white for legibility -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom fixed-top">
+       
         <div class="div navbar-brand-box">
-        <!-- Brand -->
+       
         <a class="navbar-brand" id="navbar-brand-hover" href="https://thomasmcquillan.github.io/Milestone-One-Project/index.html">Thomas McQuillan</a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Nav Links/Menu items-->
+        
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <!-- links for larger viewports -->
+                
                 <li class="nav-item d-none d-md-block">
                     <a href="https://thomasmcquillan.github.io/Milestone-One-Project/projects.html" class="nav-link">Projects</a>
                 </li>
@@ -51,7 +115,7 @@
                 <li class="nav-item d-none d-md-block">
                     <a href="https://thomasmcquillan.github.io/Milestone-One-Project/contact.html" class="nav-link">Contact</a>
                 </li>
-                <!-- links for mobile devices, hidden inside the 'hamburger' -->
+                
                 <div class="nav-link-smooth">
                 <li class="nav-link d-md-none">
                     <a href="https://thomasmcquillan.github.io/Milestone-One-Project/projects.html" class="nav-link">Projects</a>
@@ -70,22 +134,8 @@
         </div>
         </nav>
         </div>
-    <!-- </div> -->
-</header>
-<div class="container-fluid nav-left photo-spacer">
-    <div class="row">
-        <div class="col-12 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_01.jpg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_02.jpg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_03.jpg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_04.jpg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/pinochio.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 col-md-6 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 col-md-6 px-4 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-    </div>
-</div>  
-
-<!-- <div class="mx-auto"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div> -->
+   
+</header> -->
 
 <!-- Javascript for bootstrap navbar components -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,352 +1,103 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto", sans-serif;
-    background-color: #fff;
-}
-
-/* custom styled scrollbars, discovered in article by Sara Cope @ https://css-tricks.com/almanac/properties/s/scrollbar/  */
-
-body::-webkit-scrollbar {
-    width: 0.20rem;
-    height: 0.20rem;
-    }
-
-body::-webkit-scrollbar-track {
-    background: lightslategrey;
-    }
-
-body::-webkit-scrollbar-thumb {
-    background: slategrey;
-    }
-
-/* background-slider */
-
-.hero-background { 
-    /* position: absolute; */
-    position: fixed;
-    background-size: cover;
-    width: cover;
-    /* width: cover;
-    height: 100vh; */
-    /* background-color: white; */
-    /* display: flex; */
-    background: url("/workspace/Milestone-One-Project/assets/images/about-hero.jpg") no-repeat center top;
-    /* background-image: url("https://live.staticflickr.com/6131/5972460380_d2057c8b6f_k.jpg"); */
-}   
-
-.nav-wrap {
-    display: block;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background: #fff;
-    z-index: 999;
-}
-
-.navbar {
-    background-color: transparent;
-    transition: all 5ms ease-in-out;
-}
-
-.navbar-custom .navbar-nav,
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: lightslategrey;
-    font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    font-size: 1.1rem;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    transition: all 5ms ease-in-out;
-}
-
-.navbar-custom .navbar-brand {
-    font-size: 1.4rem;
-    margin-left: 9px;
-}
-
-.navbar .navbar-brand:hover {
-    color: darkslategrey;
-}
-
-.navbar-custom .navbar-nav {
-    display: inline-flex;
-    justify-items: flex-end;
-    position: fixed;
-    right: 0;
-}
-
-.nav-item {
-    justify-items: right;
-    position: relative;
-    margin-right: 14px;
-    right: 0;
-}
-
-.nav-item a {
-    display: inline-block;
-    position: relative;
-    right: 0;
-    padding: 0;
-}
-
-.navbar-nav .nav-link a {
-    justify-self: right;
-    padding: 0 14px 0 0;
-}
-
-.navbar-custom .navbar-nav .nav-item a {
-    color: lightslategrey;
-    background-color: none;
-}
-
-.navbar-custom .navbar-nav .nav-item a:hover {
-    color: darkslategrey;
-}
-
-.navbar-custom .navbar-toggler {
-    display: inline-flex;
-    justify-content: flex-end;
-    font-size: 1rem;
-    padding: 0;
-    border: none;
-    color: rgb(183, 193, 202);
-    width: 2rem;
-    height: 2rem;
-    /* border: 1px solid orange; */
-}
-
-.navbar-custom .navbar-toggler:hover {
-    color: darkslategrey;
-}
-
-@media only screen and (max-width : 767px) {
-    nav {
-        background-color: rgba(248, 248, 248, 0.724);
-    }
-
-    .navbar-custom .navbar-brand {
-        display: block;
-        z-index: 999;
-        
-    }
-    
-    nav .navbar-nav {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        width: 100vw;
-        height: 66vh;
-        background-color : rgba(248, 248, 248, 0.724);
-    }
-
-    nav ul {
-        display: block;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        background: #fff;
-    }
-    
-    .nav-link {
-        display: flex;
-        flex-direction: column;
-        align-items: space-evenly;
-        padding: 0;
-        text-align: center;
-        width: 100vw;
-        height: 50vw;
-        font-weight: 400;
-    }  
-
-    .navbar-custom .navbar-nav .nav-link a {
-        padding: 0;
-        width: fit-content;
-        height: 4rem;
-        margin: auto;
-        font-size: 2rem;
-        font-weight: 400;
-        display: inline-block;
-        text-transform: uppercase;
-    /* ---text-shadow attribute read about here: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow, then modified to suit my tastes---  */
-        text-shadow: rgba(246, 145, 158, 0.259) 2px 1px 3px;
-    /* "background-clip:text;" researched in article by Chris Coyier at https://css-tricks.com/almanac/properties/b/background-clip/
-    then modified to suit my project's aesthetic, then applying a linear gradient I created from one of my photographs using Adobe Colors */
-        background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .navbar-custom .navbar-nav .nav-link a:hover {
-        text-shadow: rgba(156, 215, 233, 0.8) 2px 1px 3px;
-        background: linear-gradient(to right, #8FA975 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #89B3C0 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .navbar-custom .navbar-toggler {
-        position: fixed;
-        display: block;
-        width: 28px;
-        height: 28px;
-        border-radius: 10%;
-        z-index: 100;
-        font-size: 1.3rem;
-        right: 4vw;
-        border-color: #fff;
-    }
-
-    .navbar-custom .navbar-toggler:hover {
-        background: lightslategrey;
-    }
-
-    .nav-link-smooth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        /* padding: 100px 20px 100px; 20px; */
-        transition: ease-in-out all 5ms;
-    }
-}
-
-/* @media only screen and (min-width : 768px) { */
-
-@media only screen and (min-width : 768px) {
-    .navbar-custom .navbar-toggler {
-        display: none;
-    }
-    .navbar-nav {
-        position: fixed;
-        width: 27vw;
-        margin-right: 3vw;
-        height: 34px;
-        background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
-        /* background: rgb(169, 181, 192); */
-        box-shadow: rgba(208, 230, 236, 0.9) 2x 1px 1px;
-    }
-
-    .navbar-custom .navbar-nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        top: 4vw;
-        right: 2vw;
-        width: 346px;
-        box-shadow: rgba(208, 230, 236, 0.9) 2px 1px 1px;
-    }
-
-    .navbar-custom .navbar-brand {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.3rem;
-        font-weight: 300;
-        width: 208px;
-        height: 24px;
-        line-height: 24px;
-        border-radius: 1px;
-        background: #fff;
-        /* box-shadow: rgba(208, 230, 236, 0.9) 2px 1px 1px; */
-    }
-/* 
-    .navbar-custom .navbar-brand a {
-        display: block;
-        padding-bottom: 10px;
-        height: 24px;
-    } */
-
-    .navbar-custom .navbar-brand:hover {
-        color: rgb(11, 132, 168);
-        background: rgb(242, 252, 255);
-        /* background-color: rgb(103, 102, 102); */
-    }
-
-    .navbar-brand-box {
-        display: flex;
-        /* justify-content: flex-end; */
-        position: fixed;
-        justify-items: center;
-        align-items: center;
-        top: 4vw;
-        left: 4vw;
-        width: 210px;
-        height: 34px;
-        border-radius: 2px;
-        box-shadow: rgba(156, 215, 233, 0.9) 2px 2px 2px;
-        background: linear-gradient(to right, #89B3C0 0%, 22.019867599010468%, #DE7684 44.039735198020935%, 72.01986759901047%, #8FA975 100%);
-        /* background: rgb(169, 181, 192); */
-    }
-
-    .navbar-custom .navbar-nav .nav-item ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .navbar-custom .navbar-nav .nav-item a {
-        border-radius: 1px;
-        line-height: 24px;
-        width: calc(fit-content - 2px);
-        font-size: 1.1rem;
-    }
-
-     .navbar-custom .navbar-nav .nav-item a:hover {
-        color: #fff;
-        background-color: rgb(103, 102, 102);
-    }
-
-    .nav-top {
-        margin: 0 7vw 0 7vw;   
-    }
-}
-
-/* <!-- Photo section --> */
-
-.container-fluid {
-    width: auto;
-}
-
-.photo-spacer {
-    padding: 30vw 3vw 22vw 3vw;
-    /* padding-top: 18vw;
-    padding-bottom: 18vw; */
-}
-
-.mx-auto img {
-    margin: auto 3vw 9vw 3vw;
-    width: calc(100vw - 6vw);
-    max-width: 1000px;
-}
-
-.gallerytest {
-    display: grid;
-    place-items: center;
-}
-
-.col-12 {
     margin: 0;
     padding: 0;
 }
 
-.caption {
-    font-family: "Freight-sans-pro" sans-serif;
+/* moving to grid template layout for nav */
+
+body {
+    display: grid;
+    /* grid-template-columns: minmax(180px, 18%) 1fr; */
+    grid-template-columns: 160px 1fr;
+    padding: 0;
+    margin: 0;
+    font-family: 'neue-kabel', sans-serif;
     font-weight: 300;
-    font-size: .9rem;
-    padding-top: 10px;
-    text-align: right;
-    color:slategrey;
+    background-color: #fdffff;
 }
 
-.projects-page img {
-    padding-bottom: 10px;
+.sidebar {
+    height: 100vh;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: fixed;
+    width: 160px;
+    top: 0;
+    left: 0;
+    background-color: #f3ebeb54;
+    text-align: center;
+    justify-content: center;
+}
+
+.sidebar-nav {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3px;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    height: 20rem;
+    padding-top: 77px;
+}
+
+.nav-items li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: space-between;
+    height: 100%;
+}
+
+.nav-items h5, h6 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.content-page-right {
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 13;
+    justify-self: center;
+    padding: 0 1vw;
+}
+
+.thomono-logo {
+    margin-top: 8px;
+    padding: 28px 0 0 0;
+    display: block;
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    background-color: rgba(243, 235, 235, 0.88);
+    background-color: rgb(255, 221, 221);
+    font-size: 1.2rem;
+    font-family: "Futura";
+    font-weight: 300;
+}
+
+.thom-ono {
+    letter-spacing: -.4px;
+     text-align: left;
+     height: 20px;
+}
+
+.tho-mono {
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: flex-start;
+    height: 100%;
+    width: 140px;
+    position: absolute;
+    bottom: 33px;
 }
