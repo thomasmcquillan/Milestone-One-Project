@@ -99,13 +99,8 @@ a:active {
 
 .mono-landing:hover,
 .thom-landing:hover {   
-    /* width: min(max(160px, 290px), 240px);
-    height: min(max(160px, 290px), 240px); */
     width: min(max(160px, 290px), 330px);
     height: min(max(160px, 290px), 330px);
-    /* width: min(max(160px, 290px), 240px);
-    height: min(max(160px, 290px), 240px); */
-    /* height: min(max(170px, 220px), 400px); */
     background-color: rgba(245, 255, 250, 0.28);
     box-shadow: 2px 4px 4px rgba(95, 95, 95, 0.3);
     transition: all .1s ease-out;
@@ -120,38 +115,55 @@ a:active {
 
 /* ----layout-styles------------ */
 
-#larger-viewports-wrapper {
-    display: grid;
-    grid-template-columns: 160px 1fr;
+/* #larger-viewports-wrapper {
     padding: 0;
     margin: 0;
     font-family: 'Neue-Kabel', sans-serif;
     font-weight: 300;
     background-color: #fdffff;
-}
-
-.sidebar {
-    height: 100vh;
-    display: flex;
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-    position: fixed;
-    width: 160px;
-    top: 0;
-    left: 0;
-    background-color: rgb(235, 235, 235);
-    justify-content: center;
-}
+} */
 
 .content-page-right {
-    display: flex;
-    grid-column-start: 3;
-    grid-column-end: 13;
-    justify-self: center;
-    padding: 0 1vw;
+    
+    /* grid-column-start: 3;
+    grid-column-end: 13; */
+    /* justify-self: center; */
 }
 
 /* ----Navigation styles-------- */
+
+.navbar-custom .bg-light {
+    background-color: #fff;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.nav-wrapper {
+    display: flex;
+    position: sticky;
+    margin-bottom: auto;
+    background-color: #fff;
+    border: 1px solid yellow;
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    right: 0; 
+    top: 0;
+}
+
+button {
+    border-radius: 5px;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.03), 
+                0 4px 2px rgba(0,0,0,0.03), 
+                0 8px 4px rgba(0,0,0,0.03), 
+                0 16px 8px rgba(0,0,0,0.03),
+                0 32px 16px rgba(0,0,0,0.03);
+}
 
 .nav-links ul {
     display: flex;
@@ -159,7 +171,6 @@ a:active {
     align-items: space-between;
     justify-content: center;
     height: 20rem;
-    padding: 55px 0 0 28px;
 }
 
 .nav-items li {
@@ -167,7 +178,6 @@ a:active {
     justify-content: space-between;
     flex-direction: column;
     align-items: space-between;
-    height: 100%;
 }
 
 .social-links {
@@ -178,7 +188,19 @@ a:active {
 }
 
 .navbar-toggler {
-    border: none;
+    background: #fff;
+    position: fixed;
+    line-height: 1.2;
+    top: 0;
+    right: 0;
+}
+
+.navbar-toggler {
+    height: 50px;
+}
+
+.navbar-toggler button {
+    box-shadow: none;
 }
 
 /* ----Typography styles-------- */
@@ -217,46 +239,27 @@ h1, h2, h3, h4, h5 {
 p {
     font-family: "Nunito Sans Light", sans-serif;
     font-size: 13px;
-    Line-height: 23px;
+    line-height: 23px;
     font-style: normal;
     word-break: break-word;
     -webkit-font-smoothing: antialiased;
     color: #1C1B1B;
 }
 
-.thomono-logo {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    margin-top: 8px;
-    padding: 28px 0 0 0;
-    display: block;
-    width: 136px;
-    height: 136px;
-    border-radius: 50%;
-    background-color: rgba(243, 235, 235, 0.88);
-    background-color: rgb(255, 221, 221);
-    /* font-size: 1.2rem; */
-    font-family: "Futura";
-    font-weight: 300;
-}
 
-.thomono-logo:hover {
-    background-color: lightgrey;
-}
 
-.thom-ono {
-    letter-spacing: -.4px;
-     text-align: left;
-     height: 20px;
-}
+/* .thom_ {
+  font-size: 40px;
+  font-family: "Futura";
+  color: darkslategrey;
+  line-height: 1.2;
+  text-align: left;
 
-#thom-logo-svg {
-    justify-self: center;
-    font-size: 1rem;
-    /* width: 88px; */
-    margin: 18px auto auto 18px;
-}
+  position: absolute;
+  left: 2vw;
+  top: 0;
+  z-index: 2;
+} */
 
 /* ----Section styles-------- */
 
@@ -270,6 +273,10 @@ p {
 
 .form-dark {
     background: url("https://live.staticflickr.com/5172/5395399524_61deedc5d8_b.jpg");
+}
+
+.photo-wrap {
+    margin-top: 111px;
 }
 
 
