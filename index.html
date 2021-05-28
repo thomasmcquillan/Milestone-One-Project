@@ -10,30 +10,6 @@
     <!-- extra styling and libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css"/> 
-    <!--- Linked Fonts: Adobe freight-sans-pro, sans-serif --->
-    <link rel="stylesheet" href="https://use.typekit.net/cav8jtj.css">
-    <!-- Local custom styles for testing (delete before final deployment) -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>    
-    <!-- Custom styles -->
-    <!-- <link rel="stylesheet" href="https://thomasmcquillan.github.io/Milestone-One-Project/assets/css/style.css" type="text/css"/> -->
-    
-    <title>Thomas McQuillan</title>
-
-</head>
-<body>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- do i need this: -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- reverting to Bootstrap CSS 4.6 for stability, assuming it works-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- extra styling and libraries -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-        type="text/css"/> 
     <!--- Linked Fonts from Adobe Fonts --->
     <link rel="stylesheet" href="https://use.typekit.net/cav8jtj.css">
     <!-- Local custom styles for testing (delete before final deployment) -->
@@ -47,37 +23,39 @@
 
 <body>
 
- <nav class="navbar d-sm-none navbar-expand-sm navbar-light bg-light navbar-custom fixed-top">
+<div id="smaller-viewports-content">
+    <nav class="navbar d-sm-none navbar-expand-sm navbar-light bg-light navbar-custom fixed-top">
+        <button>
+            <span id="thom-logo-svg"><img src="assets/images/thom-logo.png"></span>
+        </button>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <span class="menu"><h4>+</h4></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item d-sm-none">
-                        <a href="https://thomasmcquillan.github.io/Milestone-One-Project/projects.html" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item d-sm-none">
-                        <a href="https://thomasmcquillan.github.io/Milestone-One-Project/about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item d-sm-none">
-                        <a href="https://thomasmcquillan.github.io/Milestone-One-Project/prints.html" class="nav-link">Prints</a>
-                    </li>
-                    <li class="nav-item d-sm-none">
-                        <a href="https://thomasmcquillan.github.io/Milestone-One-Project/contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        <!-- </div> -->
+            <span class="menu-toggler"><h1>+</h1></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item d-sm-none">
+                    <a href="https://thomasmcquillan.github.io/Milestone-One-Project/projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item d-sm-none">
+                    <a href="https://thomasmcquillan.github.io/Milestone-One-Project/about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item d-sm-none">
+                    <a href="https://thomasmcquillan.github.io/Milestone-One-Project/prints.html" class="nav-link">Prints</a>
+                </li>
+                <li class="nav-item d-sm-none">
+                    <a href="https://thomasmcquillan.github.io/Milestone-One-Project/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+</div>
 
 <div class="row container-fluid mx-auto d-block d-sm-none">
 
-        <div class="col-12 col-md-12 py-4"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
+        <div class="col-12 col-md-8 py-4"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
         <div class="col-12 col-md-12 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_01.jpg" class="img-fluid" alt="snow covered car"></div>
-        <div class="col-12 col-sm-12 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_02.jpg" class="img-fluid" alt="greyscale photograph of frozen puddle"></div>
+        <div class="col-12 col-md-8 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_02.jpg" class="img-fluid" alt="greyscale photograph of frozen puddle"></div>
         <div class="col-12 col-sm-10 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_03.jpg" class="img-fluid" alt="black building under pink sunset in winter"></div>
         <div class="col-12 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_04.jpg" class="img-fluid" alt="vines growing up side of house"></div>
         <div class="col-12 py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/pinochio.jpeg" class="img-fluid" alt="small child looking up at large pinochio sculpture"></div>
@@ -85,13 +63,13 @@
         <div class="col-12 mx-auto social-links"><a href="https://www.instagram.com/thomas.mcquillan/" target="_blank">instagram</a></div>
 </div>
 
-<div id="body-wrapper">
-
+<div id="larger-viewports-wrapper">
 <div class="sidebar d-none d-sm-block">
     <div class="sidebar-nav d-none d-sm-block">
 
         <div class="thomono-logo">
             <div>
+
                 <a href="/workspace/Milestone-One-Project/index.html"><h1>_thom*</h1></a>
             </div>
         </div>
@@ -116,9 +94,9 @@
 </div>
 <div class="row content-page-right container-fluid d-none d-sm-block">
 
-        <div class="col-12 col-md-12 mx-auto py-4"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
-        <div class="col-12 col-md-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_01.jpg" class="img-fluid" alt="snow covered car"></div>
-        <div class="col-12 col-sm-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_02.jpg" class="img-fluid" alt="greyscale photograph of frozen puddle"></div>
+        <div class="col-12 col-lg-8 mx-auto py-4"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg" class="img-fluid" alt="green muscle car at roadside in spring"></div>
+        <div class="col-12 col-md-10 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_01.jpg" class="img-fluid" alt="snow covered car"></div>
+        <div class="col-12 col-md-8 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_02.jpg" class="img-fluid" alt="greyscale photograph of frozen puddle"></div>
         <div class="col-12 col-sm-10 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_03.jpg" class="img-fluid" alt="black building under pink sunset in winter"></div>
         <div class="col-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/test_04.jpg" class="img-fluid" alt="vines growing up side of house"></div>
         <div class="col-12 col-md-12 mx-auto py-5"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/pinochio.jpeg" class="img-fluid" alt="small child looking up at large pinochio sculpture"></div>
