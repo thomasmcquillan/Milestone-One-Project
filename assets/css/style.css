@@ -5,11 +5,12 @@
 
 a {
     text-decoration: none;
-    font-size: 16px;
+    /* font-size: 16px; */
     color: darkslategrey;
 }
 
-a:hover {
+a:hover,
+.navbar-custom .navbar-collapse .navbar-link a:hover {
     text-decoration: none;
     color: pink;
 }
@@ -101,7 +102,7 @@ a:active {
     /* width: min(max(160px, 290px), 240px);
     height: min(max(160px, 290px), 240px); */
     width: min(max(160px, 290px), 330px);
-    height: min(max(160px, 290px), 300px);
+    height: min(max(160px, 290px), 330px);
     /* width: min(max(160px, 290px), 240px);
     height: min(max(160px, 290px), 240px); */
     /* height: min(max(170px, 220px), 400px); */
@@ -132,8 +133,8 @@ a:active {
 .sidebar {
     height: 100vh;
     display: flex;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
     position: fixed;
     width: 160px;
     top: 0;
@@ -171,6 +172,7 @@ a:active {
 
 .social-links {
     display: flex;
+    font-size: 12px;
     justify-content: center;
     padding-bottom: 38px;
 }
@@ -192,14 +194,10 @@ h1, h2, h3, h4, h5 {
     -webkit-text-stroke: 1px grey;
     -webkit-text-fill-color: #eee;
 }
-/* 
-html {
-  font-size: min(max(1rem, 4vw), 22px);
-} */
 
 .thom-landing h3 {
-    /* font-size: clamp(55px, 8vw, 77px); */
-    font-size: min(max(48px, 8vw), 122px);
+    font-size: clamp(55px, 8vw, 77px);
+    /* font-size: min(max(48px, 8vw), 122px); */
     padding: 10vmin 1rem;
     text-align: center;
     margin: 0 0 8vmin 0;
@@ -224,6 +222,9 @@ p {
 }
 
 .thomono-logo {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     margin-top: 8px;
     padding: 28px 0 0 0;
     display: block;
@@ -232,14 +233,13 @@ p {
     border-radius: 50%;
     background-color: rgba(243, 235, 235, 0.88);
     background-color: rgb(255, 221, 221);
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-family: "Futura";
     font-weight: 300;
 }
 
-.thom-logo h3 {
-    padding-top: 30px;
-    font-size: 20px;
+.thomono-logo:hover {
+    background-color: lightgrey;
 }
 
 .thom-ono {
