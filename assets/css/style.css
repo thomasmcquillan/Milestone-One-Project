@@ -3,15 +3,128 @@
     padding: 0;
 }
 
-/* moving to grid template layout for nav */
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: darkslategrey;
+}
 
-body {
+a:hover {
+    text-decoration: none;
+    color: pink;
+}
+
+a:active {
+    color: purple;
+}
+
+/* ----hero banner background images-------- */
+
+.hero-banner-landing { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/5087/5374560217_ef10d43e0d_o.jpg") no-repeat center center scroll;
+    background-size: cover !important;
+}
+
+.hero-banner-index { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url(https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/springmuscle.jpeg) no-repeat center center scroll;
+    background-size: cover !important;
+}
+
+.hero-banner-about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/7148/6780308101_741d3e70e9_c.jpg") no-repeat center center scroll;
+    background-size: cover !important;
+}
+
+.hero-banner-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background: url(https://live.staticflickr.com/5172/5395399524_61deedc5d8_b.jpg) no-repeat center center fixed; 
+    background-size: cover !important;
+}
+
+.mono-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 269px;
+    width: 269px;
+    border-radius: 50%;
+    background: none;
+    text-decoration: none;
+}
+
+.thom-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 296px;
+    width: 296px;
+    border-radius: 50%;
+    background: none;
+    text-decoration: none;
+}
+
+.mono-landing:hover,
+.thom-landing:hover {   
+    /* width: min(max(160px, 290px), 240px);
+    height: min(max(160px, 290px), 240px); */
+    width: min(max(160px, 290px), 330px);
+    height: min(max(160px, 290px), 300px);
+    /* width: min(max(160px, 290px), 240px);
+    height: min(max(160px, 290px), 240px); */
+    /* height: min(max(170px, 220px), 400px); */
+    background-color: rgba(245, 255, 250, 0.28);
+    box-shadow: 2px 4px 4px rgba(95, 95, 95, 0.3);
+    transition: all .1s ease-out;
+}
+
+.mono-landing:hover a,
+.thom-landing:hover a {
+    text-decoration: none;
+    text-shadow: 3px 6px 4px rgba(168, 166, 166, 0.8);
+}
+
+
+/* ----layout-styles------------ */
+
+#body-wrapper {
     display: grid;
-    /* grid-template-columns: minmax(180px, 18%) 1fr; */
     grid-template-columns: 160px 1fr;
     padding: 0;
     margin: 0;
-    font-family: 'neue-kabel', sans-serif;
+    font-family: 'Neue-Kabel', sans-serif;
     font-weight: 300;
     background-color: #fdffff;
 }
@@ -25,24 +138,27 @@ body {
     width: 160px;
     top: 0;
     left: 0;
-    background-color: #f3ebeb54;
-    text-align: center;
+    background-color: rgb(235, 235, 235);
     justify-content: center;
 }
 
-.sidebar-nav {
-    display: block;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 3px;
+.content-page-right {
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 13;
+    justify-self: center;
+    padding: 0 1vw;
 }
+
+/* ----Navigation styles-------- */
 
 .nav-links ul {
     display: flex;
     flex-direction: column;
     align-items: space-between;
+    justify-content: center;
     height: 20rem;
-    padding-top: 77px;
+    padding: 55px 0 0 28px;
 }
 
 .nav-items li {
@@ -53,17 +169,58 @@ body {
     height: 100%;
 }
 
-.nav-items h5, h6 {
-    font-size: 18px;
-    font-weight: 300;
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 38px;
 }
 
-.content-page-right {
-    display: flex;
-    grid-column-start: 3;
-    grid-column-end: 13;
-    justify-self: center;
-    padding: 0 1vw;
+
+/* ----Typography styles-------- */
+
+h1, h2, h3, h4, h5 {
+    font-family: "Futura", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #eee;
+    font-size: minmax(13vmin 18vmax);
+    letter-spacing: 0.03em;
+    line-height: 1;
+    text-shadow: 1px 2px 4px rgba(95, 95, 95, 0.6);  
+    background: transparent;
+    text-decoration: none;
+    -webkit-text-stroke: 1px grey;
+    -webkit-text-fill-color: #eee;
+}
+/* 
+html {
+  font-size: min(max(1rem, 4vw), 22px);
+} */
+
+.thom-landing h3 {
+    /* font-size: clamp(55px, 8vw, 77px); */
+    font-size: min(max(48px, 8vw), 122px);
+    padding: 10vmin 1rem;
+    text-align: center;
+    margin: 0 0 8vmin 0;
+}
+
+/* h1 {
+    font-size: 3.6rem;
+    text-shadow:    0 2px 1px rgba(0,0,0,0.09), 
+                    0 4px 2px rgba(0,0,0,0.09), 
+                    0 8px 4px rgba(0,0,0,0.09);
+    -webkit-text-stroke: 1.1px rgb(15, 19, 19);
+} */
+
+p {
+    font-family: "Nunito Sans Light", sans-serif;
+    font-size: 13px;
+    Line-height: 23px;
+    font-style: normal;
+    word-break: break-word;
+    -webkit-font-smoothing: antialiased;
+    color: #1C1B1B;
 }
 
 .thomono-logo {
@@ -80,24 +237,222 @@ body {
     font-weight: 300;
 }
 
+.thom-logo h3 {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
 .thom-ono {
     letter-spacing: -.4px;
      text-align: left;
      height: 20px;
 }
 
-.tho-mono {
-    letter-spacing: 1px;
-    text-align: left;
-    line-height: 20px;
+/* ----Section styles-------- */
+
+.hello {
+    margin-top: 180px;
+    padding-right: 20%;
+    padding-bottom: 60px;
 }
 
-.social-links {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-items: flex-start;
-    height: 100%;
-    width: 140px;
-    position: absolute;
-    bottom: 33px;
+
+
+
+
+
+/* styles to weave into the mix from earlier testing: */
+
+/* * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    background-color: transparent;
 }
+
+--------custom styled scrollbars, discovered in article by Sara Cope @ https://css-tricks.com/almanac/properties/s/scrollbar/  -------
+
+body::-webkit-scrollbar {
+    width: 0.20rem;
+    height: 0.20rem;
+    }
+
+body::-webkit-scrollbar-track {
+    background: lightslategrey;
+    }
+
+body::-webkit-scrollbar-thumb {
+    background: slategrey;
+    }
+
+-----------font styles-------
+
+a {
+    color: rgb(65, 81, 173);
+}
+
+h1, h2, h3, h4, h5 {
+    font-style: normal;
+    font-weight: bold;
+    color: #eee;
+    font-size: 12vmin;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    text-shadow: 1px 2px 4px rgba(95, 95, 95, 0.6);  
+    
+    background: transparent;
+    text-decoration: none;
+    -webkit-text-stroke: 1px grey;
+    -webkit-text-fill-color: #eee;
+}
+
+h2 {
+    font-size: 10.6vmin;
+    -webkit-text-stroke: 1.3px grey;
+    -webkit-text-fill-color: #eee;
+}
+
+h3 {
+    font-size: 10.10vmin;
+}
+
+h4 {
+    font-size: 7.58vmin;  
+}
+
+h5 {
+    font-size: 5.9vmin;
+}
+
+p {
+    color: darkslategrey;
+    background-color: transparent;
+}
+
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+}
+
+.center-div {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.contact-text p {
+    text-align: center;
+    color: #eee;
+}
+
+------contact-page---------
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    max-width: 550px;
+    background-color: rgba(255, 255, 255, 0.22);
+    border-radius: 50px;
+    margin: 5vh 5vw;
+}
+
+#contact-heading {
+    font-size: 3.6rem;
+    text-shadow:    0 2px 1px rgba(0,0,0,0.09), 
+                    0 4px 2px rgba(0,0,0,0.09), 
+                    0 8px 4px rgba(0,0,0,0.09);
+    -webkit-text-stroke: 1.1px rgb(15, 19, 19);
+}
+
+.contact-wrapper,
+#contact-form-message,
+.md-form input,
+.contact-blurb,
+.btn-light {
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+                0 4px 2px rgba(0,0,0,0.09), 
+                0 8px 4px rgba(0,0,0,0.09), 
+                0 16px 8px rgba(0,0,0,0.09),
+                0 32px 16px rgba(0,0,0,0.09);
+}
+
+.contact-blurb {
+    color: rgb(6,45,78);
+    background-color: rgba(255, 255, 255, 0.88);
+
+    font-family: "FreightSans Pro";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    height: auto;
+    padding: 1rem 1rem 1.4rem 1rem;
+    width: 100%;
+    line-height: 1.5rem;
+    border-radius: 28px 28px 28px 28px;
+
+    lovely smooth box-shadow snippet by Tobias Ahlin at: https://tobiasahlin.com/blog/layered-smooth-box-shadows/
+    
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+              0 4px 2px rgba(0,0,0,0.09), 
+              0 8px 4px rgba(0,0,0,0.09), 
+              0 16px 8px rgba(0,0,0,0.09),
+              0 32px 16px rgba(0,0,0,0.09);
+}
+
+.form-dark {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-evenly;
+}
+
+#contact-form-message,
+.md-form input,
+.btn-light {
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 24px;
+    padding: 0 1rem 0 1rem;
+}
+
+#contact-form-message {
+    padding-top: 5px;
+    border-radius: 24px 24px 28px 28px;
+}
+
+.btn-light {
+    display: grid;
+    place-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.btn-light:hover {
+    transition: ease-in all 30ms;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 25%;
+}
+
+
+@media only screen and (max-width: 570px) {
+    .contact-wrapper {
+        height: 88vh;
+        width: 94vw;
+        min-width: 320px;
+        border-radius: 28px;
+        margin: 6vh 6vw;
+    }
+
+    .contact-blurb {
+        font-size: 16px;
+    }
+} */
