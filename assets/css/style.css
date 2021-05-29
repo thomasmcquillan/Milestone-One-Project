@@ -165,19 +165,33 @@ button {
                 0 32px 16px rgba(0,0,0,0.03);
 }
 
-.nav-links ul {
+/* .nav-links ul {
     display: flex;
     flex-direction: column;
     align-items: space-between;
     justify-content: center;
     height: 20rem;
+} */
+
+.navbar-custom .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(248, 248, 248, 0.92);
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 0 20vh 0;
+    transition: all ease-in 0.6s;
 }
 
-.nav-items li {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: space-between;
+.navbar-brand {
+    z-index: 999;
+    margin: 8px auto auto 8px;
 }
 
 .social-links {
@@ -190,17 +204,16 @@ button {
 .navbar-toggler {
     background: #fff;
     position: fixed;
-    line-height: 1.2;
+    border: .1px solid lightgrey;
     top: 0;
     right: 0;
-}
-
-.navbar-toggler {
-    height: 50px;
-}
-
-.navbar-toggler button {
-    box-shadow: none;
+    z-index: 999;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 48px;
+    margin: 12px 18px auto auto;
+    height: 48px;
 }
 
 /* ----Typography styles-------- */
@@ -275,22 +288,25 @@ p {
     background: url("https://live.staticflickr.com/5172/5395399524_61deedc5d8_b.jpg");
 }
 
+/* ----Photo styles -------- */
+
 .photo-wrap {
     margin-top: 111px;
+}
+
+img {
+    box-shadow: 0 2px 1px rgba(0,0,0,0.03), 
+                0 4px 2px rgba(0,0,0,0.03), 
+                0 8px 4px rgba(0,0,0,0.03), 
+                0 16px 8px rgba(0,0,0,0.03),
+                0 32px 16px rgba(0,0,0,0.03);
 }
 
 
 
 /* styles to weave into the mix from earlier testing: */
 
-/* * {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-    background-color: transparent;
-}
-
+/* 
 --------custom styled scrollbars, discovered in article by Sara Cope @ https://css-tricks.com/almanac/properties/s/scrollbar/  -------
 
 body::-webkit-scrollbar {
@@ -475,4 +491,4 @@ p {
     .contact-blurb {
         font-size: 16px;
     }
-} */
+} */ */
