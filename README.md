@@ -1,10 +1,10 @@
-# Artist Portfolio
+# Milestone One Project - User-centric Design Development
 
 [View the live website here.](https://thomasmcquillan.github.io/Milestone-One-Project/landing-page.html)
 
-## Site Purpose & Philosophy
-
 This site is designed as a bespoke online portfolio for my photography.  A web-presence is essential for artists and design professionals. Well designed and executed, it provides a potent tool for communicating an artist's ideas and aesthetic style, while also showcasing their mastery of their chosen craft.
+
+>> Insert photo of mockups here!!
 
 ## User Experience (UX)
 
@@ -17,8 +17,6 @@ This site is designed as a bespoke online portfolio for my photography.  A web-p
         * I would like to be reassured that I am in the right place - visible in the form of a name or logo.
         
         * I want to be greeted with an engaging photograph that sparks my curiosity, encouraging me to stay and further explore the site.
-        
-        * I would like to see photographs presented in a layout and design aesthetic that is enjoyable to view.
 
         * I would like the site navigation and menus to be intuitive to use and functional.
 
@@ -70,7 +68,7 @@ This site is designed as a bespoke online portfolio for my photography.  A web-p
 
 ## Design
 
-### * Colour Scheme
+### Colour Scheme
 * .... .... 
 
 ### Typography
@@ -80,4 +78,157 @@ This site is designed as a bespoke online portfolio for my photography.  A web-p
 * ... ...
 
 ## Wireframes
-* Home Page Wireframe - 'link'
+* Home Page Wireframe - 'View'
+* Mobile Page Wireframe - 'View'
+* Contact Page Wireframe - 'View'
+etc..
+
+## Features
+* Responsive across all device sizes and viewports.
+* .. ....
+
+## Technologies Used
+### Languages Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [JQuery](https://en.wikipedia.org/wiki/JQuery) - Only to power Bootstrap elements/behaviours to function, such as navbar collapse.
+
+### Frameworks, Libraries and Programs Used
+1. [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+* Bootstrap was utilised to aid in the styling of key website elements such as the Navigation Bar and for it's powerful responsive layout tools such as the row and column classes.
+2. [Adobe Fonts](https://fonts.adobe.com/)
+* Adobe Fonts was used for typography across the site. Font-families were imported into the style.css stylesheet file. 'Futura' was selected as a display font, and 'Kabel Neue' for body copy and links.
+3. [Adobe Color](https://color.adobe.com/)
+* Adobe Color helped in the selection of color-schemes and extracting gradients from images used on the site. This helped to thematically align and support the photographic content with the site elements and interface.
+4. [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
+* Adobe Photoshop was used extensively in the editing, resizing and export of the projects many image assets.
+5. [jQuery](https://jquery.com/)
+* jQuery was utilised to power Bootstrap's responsive navbar. Also used for Javascript's smooth scroll function.
+6. [Git](https://git-scm.com/)
+* Git was utilised version control, via the Gitpod terminal for commiting file changes to Git before pushing to the GitHub repository.
+7. [GitHub](https://github.com/)
+* GitHub provided a place to store the projects various files and assets after being commited and pushed from Git.
+8. [Adobe XD](https://www.adobe.com/products/xd.html)
+* Adobe XD was used to create the wireframes for the initial design, to show the layout and basic elements of the site.
+
+## Testing
+
+W3C Markup Validator W3C CSS Validator
+
+* [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - (post linked results from github here)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - (linked results)
+
+### Testing User Stories from User Experience (UX) Section 
+* #### First Time Visitor Goals
+    1. As a First Time Visitor, I would like reassurance that I am in the right place - visible in the form of a name or logo.
+        * ... ..
+        * .. ...
+        * .. ...
+    2. As a First Time Visitor, 
+        * ... ..
+        * .. ...
+        * .. ...
+    3. As a First Time Visitor, 
+        * ... ..
+        * .. ...
+        * .. ...
+    4. As a First Time Visitor, 
+        * ... ..
+        * .. ...
+        * .. ...
+    5. As a First Time Visitor, 
+        * ... ..
+        * .. ...
+        * .. ...
+    6. As a First Time Visitor, 
+        * ... ..
+        * .. ...
+        * .. ...
+    7. As a First Time Visitor, 
+        * ... ..
+        * .. ...
+        * .. ...
+    8. As a First Time Visitor, 
+        * ... ..
+        * .. ...
+        * .. ...
+* #### Returning Visitor Goals
+    1. As a Returning Visitor, I would like information about ordering prints of the artist's work, and details about the printing process.
+        * ... ..
+        * .. ...
+        * .. ...
+    2. As a Returning Visitor, I would like an easy method of contacting the artist to discuss collaborative projects, commissions or ordering prints.
+        * ... ..
+        * .. ...
+        * .. ...
+* #### Frequent Visitor Goals
+    1. As a Frequent Visitor, I would like to see semi-regular updates that provide fresh content and information about upcoming exhibitions, projects or other news.
+        * ... ..
+        * .. ...
+        * .. ...
+
+## Further Testing
+* The site was tested on all major browsers including Google Chrome, Mozilla Firefox, Internet Explorer, Microsoft Edge and Safari.
+* The site was viewed on a number of devices, each with varied display sizes, resolutions and viewport-widths. These included devices as small as the original iPhoneSE, the larger iPhoneXR, an iPadPro, MacBook Pro 13" & 16" - right up to a 27" 4k monitor.
+* Extensive testing was carried out to check that all navigation links to site pages, external sites and downloadable content were functioning correctly.
+* Close scrutiny was paid to each page to ensure that no spelling errors or other inconsistencies were present.
+* Friends, family members and the slack community were all asked to look through the site and associated documentation to give feedback and report on any bugs. 
+
+## Known Bugs
+* .. ...
+* ... ..
+
+# Deployment
+
+## GitHub pages
+
+### Project was deployed to GitHub Pages using the following method..
+
+1. .. ....
+2. ... ..
+3. .. ...
+...
+
+## Forking the GitHub repository
+
+1. .. 
+2. ...
+3. ..
+
+## Making a Local Clone
+
+1. ..
+2. ..
+3. ..
+4. ...
+5. ..
+6. .
+7. ..
+
+See [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for pictures and further information describing the process.
+
+# Credits
+
+## Code
+
+...
+CSS Tricks;
+[Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+..
+## Content
+
+... 
+
+...
+
+## Media 
+
+* All photographs and images were created by the developer.
+
+## Acknowledgements
+
+* I would like to thanks my Mentor for his honest feedback and guidance.
+
+* My thanks to the Code Institute Slack community for their feedback.
+
+* Thanks to the Code Institute Tutors for their advice at the outset of the project.
