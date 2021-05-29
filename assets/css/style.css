@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 a {
     text-decoration: none;
     /* font-size: 16px; */
-    color: darkslategrey;
+    color: rgb(24, 41, 41);
 }
 
 a:hover,
@@ -188,6 +188,20 @@ a:active {
     margin: 8px auto auto 8px;
 }
 
+.navbar-custom .navbar-brand h1:hover {
+    color: purple;
+    background-color: grey;
+}
+
+.navbar-custom .navbar-brand h1:active {
+    color: pink;
+    background-color: pink;
+}
+
+/* #navbar-brand-hover:hover {
+    color: pink;
+} */
+
 .social-links {
     display: flex;
     font-size: 12px;
@@ -218,14 +232,6 @@ button {
                 0 8px 4px rgba(0,0,0,0.03), 
                 0 16px 8px rgba(0,0,0,0.03),
                 0 32px 16px rgba(0,0,0,0.03);
-}
-
-.menu-toggler {
-    text-shadow:    0 2px 1px rgba(0,0,0,0.03), 
-                    0 4px 2px rgba(0,0,0,0.03), 
-                    0 8px 4px rgba(0,0,0,0.03), 
-                    0 16px 8px rgba(0,0,0,0.03),
-                    0 32px 16px rgba(0,0,0,0.03);
 }
 
 @media (min-width: 992px) {
@@ -263,8 +269,8 @@ h1, h2, h3, h4, h5, .menu-toggler {
     text-decoration: none;
     -webkit-text-stroke: 1px grey;
     -webkit-text-fill-color: #eee;
-    text-shadow:    1px 2px 4px rgba(165, 165, 165, 0.6),
-                    0 2px 1px rgba(0,0,0,0.03), 
+    text-shadow:    0px 2px 4px rgba(168, 179, 180, 0.6),
+                    0 2px 1px rgba(40, 40, 41, 0.03), 
                     0 4px 2px rgba(0,0,0,0.03), 
                     0 8px 4px rgba(0,0,0,0.03), 
                     0 16px 8px rgba(0,0,0,0.03),
@@ -287,19 +293,6 @@ p {
     -webkit-font-smoothing: antialiased;
     color: #1C1B1B;
 }
-
-/* .thom_ {
-  font-size: 40px;
-  font-family: "Futura";
-  color: darkslategrey;
-  line-height: 1.2;
-  text-align: left;
-
-  position: absolute;
-  left: 2vw;
-  top: 0;
-  z-index: 2;
-} */
 
 /* ----Section styles-------- */
 
@@ -342,21 +335,6 @@ img {
 /* styles to weave into the mix from earlier testing: */
 
 /* 
---------custom styled scrollbars, discovered in article by Sara Cope @ https://css-tricks.com/almanac/properties/s/scrollbar/  -------
-
-body::-webkit-scrollbar {
-    width: 0.20rem;
-    height: 0.20rem;
-    }
-
-body::-webkit-scrollbar-track {
-    background: lightslategrey;
-    }
-
-body::-webkit-scrollbar-thumb {
-    background: slategrey;
-    }
-
 -----------font styles-------
 
 a {
