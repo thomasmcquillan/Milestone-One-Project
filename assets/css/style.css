@@ -13,23 +13,23 @@ html, body {
 body::-webkit-scrollbar {
     width: 0.20rem;
     height: 0.20rem;
-    }
+}
 
 body::-webkit-scrollbar-track {
     background: rgb(236, 236, 236);
-    }
+}
 
 body::-webkit-scrollbar-thumb {
     background: rgb(161, 202, 211);
-    }
+}
 
 
 /* ---- link styles -------- */
 
-a {
+a { 
     text-decoration: none;
-    /* font-size: 16px; */
     color: rgb(24, 41, 41);
+    border: 1px solid green;
 }
 
 a:hover,
@@ -42,9 +42,9 @@ a:active {
     color: purple;
 }
 
-.active {
+/* .active {
     color: purple;
-}
+} */
 
 .email-me {
     color: pink;
@@ -100,7 +100,6 @@ a:active {
     width: 100%;
     height: 100vh;
     overflow: scroll;
-    /* background: url(https://live.staticflickr.com/5172/5395399524_61deedc5d8_b.jpg) no-repeat center center fixed;  */
     background-size: cover !important;
 }
 
@@ -203,11 +202,9 @@ a:active {
 }
 
 .navbar-custom .navbar-brand h1:hover {
--webkit-text-stroke: 1px grey;
-    -webkit-text-fill-color: #fff;
-         -webkit-text-stroke: 1px rgb(75, 1, 172);
-         -webkit-text-stroke: 1px rgb(168, 210, 224);
-    /* -webkit-text-stroke: 1px rgb(24, 24, 24); */
+    /* -webkit-text-stroke: 1px grey;
+    -webkit-text-stroke: 1px rgb(75, 1, 172); */
+    -webkit-text-stroke: 1px rgb(168, 210, 224);
     -webkit-text-fill-color: #fff;
 }
 
@@ -244,13 +241,14 @@ a:active {
 }
 
 .navbar-toggler:hover {
-    -webkit-text-stroke: 1px lightblue;
     border: 1.8px solid rgb(209, 242, 252);
+    -webkit-text-stroke: 1px lightblue;
     -webkit-text-fill-color: pink;
 }
 
 button {
     border-radius: 5px;
+    /*---- smooth box-shadow snippet borrowed then tweaked, from: Tobias Ahlin at: https://tobiasahlin.com/blog/layered-smooth-box-shadows/ ----*/
     box-shadow: 0 2px 1px rgba(0,0,0,0.03), 
                 0 4px 2px rgba(0,0,0,0.03), 
                 0 8px 4px rgba(0,0,0,0.03), 
@@ -350,11 +348,7 @@ p {
 
 /* ----Section styles-------- */
 
-/* .hello {
-    margin-top: 180px;
-    padding-right: 20%;
-    padding-bottom: 60px;
-} */
+/* .hello {} */
 
 /* ---- Contact Form styles -------- */
 
@@ -386,58 +380,6 @@ img {
     padding: 0px 12px 0 12px;
 }
 
-/* styles to weave into the mix from earlier testing: */
-
-/* 
------------font styles-------
-
-a {
-    color: rgb(65, 81, 173);
-}
-
-h1, h2, h3, h4, h5 {
-    font-style: normal;
-    font-weight: bold;
-    color: #eee;
-    font-size: 12vmin;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    text-shadow: 1px 2px 4px rgba(95, 95, 95, 0.6);  
-    
-    background: transparent;
-    text-decoration: none;
-    -webkit-text-stroke: 1px grey;
-    -webkit-text-fill-color: #eee;
-}
-
-h2 {
-    font-size: 10.6vmin;
-    -webkit-text-stroke: 1.3px grey;
-    -webkit-text-fill-color: #eee;
-}
-
-h3 {
-    font-size: 10.10vmin;
-}
-
-h4 {
-    font-size: 7.58vmin;  
-}
-
-h5 {
-    font-size: 5.9vmin;
-}
-
-p {
-    color: darkslategrey;
-    background-color: transparent;
-}
-
-.container-fluid {
-    width: 100vw;
-    height: 100vh;
-}
-
 .center-div {
     width: 100vw;
     height: 100vh;
@@ -450,112 +392,7 @@ p {
     color: #eee;
 }
 
-------contact-page---------
-
-.contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 90vh;
-    width: 90vw;
-    max-width: 550px;
-    background-color: rgba(255, 255, 255, 0.22);
-    border-radius: 50px;
-    margin: 5vh 5vw;
-}
-
-#contact-heading {
-    font-size: 3.6rem;
-    text-shadow:    0 2px 1px rgba(0,0,0,0.09), 
-                    0 4px 2px rgba(0,0,0,0.09), 
-                    0 8px 4px rgba(0,0,0,0.09);
-    -webkit-text-stroke: 1.1px rgb(15, 19, 19);
-}
-
-.contact-wrapper,
-#contact-form-message,
-.md-form input,
-.contact-blurb,
-.btn-light {
-    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
-                0 4px 2px rgba(0,0,0,0.09), 
-                0 8px 4px rgba(0,0,0,0.09), 
-                0 16px 8px rgba(0,0,0,0.09),
-                0 32px 16px rgba(0,0,0,0.09);
-}
-
-.contact-blurb {
-    color: rgb(6,45,78);
-    background-color: rgba(255, 255, 255, 0.88);
-
-    font-family: "FreightSans Pro";
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    height: auto;
-    padding: 1rem 1rem 1.4rem 1rem;
-    width: 100%;
-    line-height: 1.5rem;
-    border-radius: 28px 28px 28px 28px;
-
-    lovely smooth box-shadow snippet by Tobias Ahlin at: https://tobiasahlin.com/blog/layered-smooth-box-shadows/
+a, a:hover, a:active { 
     
-    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
-              0 4px 2px rgba(0,0,0,0.09), 
-              0 8px 4px rgba(0,0,0,0.09), 
-              0 16px 8px rgba(0,0,0,0.09),
-              0 32px 16px rgba(0,0,0,0.09);
+    border: 1px solid orange;
 }
-
-.form-dark {
-    display: flex;
-    flex-direction: column;
-    justify-items: space-evenly;
-}
-
-#contact-form-message,
-.md-form input,
-.btn-light {
-    background-color: rgba(255, 255, 255, 0.88);
-    border-radius: 24px;
-    padding: 0 1rem 0 1rem;
-}
-
-#contact-form-message {
-    padding-top: 5px;
-    border-radius: 24px 24px 28px 28px;
-}
-
-.btn-light {
-    display: grid;
-    place-content: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.btn-light:hover {
-    transition: ease-in all 30ms;
-    font-weight: 500;
-    color: #fff;
-    border: 2px solid white;
-    background: rgba(255, 255, 255, 0.11);
-    border-radius: 25%;
-}
-
-
-@media only screen and (max-width: 570px) {
-    .contact-wrapper {
-        height: 88vh;
-        width: 94vw;
-        min-width: 320px;
-        border-radius: 28px;
-        margin: 6vh 6vw;
-    }
-
-    .contact-blurb {
-        font-size: 16px;
-    }
-} */ */
