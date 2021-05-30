@@ -42,6 +42,9 @@ a:active {
     color: purple;
 }
 
+.active {
+    color: purple;
+}
 
 /* ----hero banner background images-------- */
 
@@ -136,6 +139,9 @@ a:active {
     text-shadow: 3px 6px 4px rgba(168, 166, 166, 0.8);
 }
 
+.landing-logo h1 {
+    font-size: 13vmin;
+}
 
 /* ----layout-styles------------ */
 
@@ -176,7 +182,7 @@ a:active {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(253, 253, 253, 0.88);
+    background: rgb(253, 253, 253);
     width: 100vw;
     height: 100vh;
     padding: 20vh 0 20vh 0;
@@ -188,25 +194,27 @@ a:active {
     margin: 8px auto auto 8px;
 }
 
-.navbar-custom .navbar-brand h1:hover {
-    color: purple;
+.navbar-custom .navbar-brand:hover {
     background-color: grey;
+    -webkit-text-stroke: 1px grey;
+    -webkit-text-fill-color: pink;
+}
+
+.navbar-custom .navbar-brand h1:hover {
+-webkit-text-stroke: 1px grey;
+    -webkit-text-fill-color: #fff;
 }
 
 .navbar-custom .navbar-brand h1:active {
-    color: pink;
-    background-color: pink;
+    -webkit-text-stroke: 1px pink;
+    -webkit-text-fill-color: pink;
 }
-
-/* #navbar-brand-hover:hover {
-    color: pink;
-} */
 
 .social-links {
     display: flex;
     font-size: 12px;
     justify-content: center;
-    padding-bottom: 38px;
+    
 }
 
 .navbar-toggler {
@@ -251,6 +259,11 @@ button {
     .navbar li {
         padding-bottom: 20px;
     }
+
+    .contact-hello {
+        margin-left: auto;
+        width: 
+    }
 } 
 
 
@@ -277,6 +290,25 @@ h1, h2, h3, h4, h5, .menu-toggler {
                     0 32px 16px rgba(0,0,0,0.03);
 }
 
+.landing-logo h1 {
+    background: transparent;
+    text-decoration: none;
+    -webkit-text-stroke: 1px rgb(24, 24, 24);
+    -webkit-text-fill-color: #eee;
+    text-shadow:    0px 2px 4px rgba(52, 53, 53, 0.6),
+                    0 2px 1px rgba(40, 40, 41, 0.03), 
+                    0 4px 2px rgba(0,0,0,0.03), 
+                    0 8px 4px rgba(0,0,0,0.03), 
+                    0 16px 8px rgba(0,0,0,0.03),
+                    0 32px 16px rgba(0,0,0,0.03);
+}
+
+.landing-logo h1:hover {
+    -webkit-text-stroke: 1px rgb(75, 1, 172);
+    /* -webkit-text-stroke: 1px rgb(24, 24, 24); */
+    -webkit-text-fill-color: #fff;
+}
+
 .thom-landing h3 {
     font-size: clamp(55px, 8vw, 77px);
     padding: 10vmin 1rem;
@@ -296,23 +328,23 @@ p {
 
 /* ----Section styles-------- */
 
-.hello {
+/* .hello {
     margin-top: 180px;
     padding-right: 20%;
     padding-bottom: 60px;
-}
+} */
 
 /* ---- Contact Form styles -------- */
+
+.contact-hello {
+    margin-top: 22vw;
+}
 
 .form-dark {
     background: url("https://live.staticflickr.com/5172/5395399524_61deedc5d8_b.jpg");
 }
 
 /* ----Photo styles -------- */
-
-.photo-wrap {
-    margin-top: 111px;
-}
 
 img {
     box-shadow: 0 2px 1px rgba(0,0,0,0.03), 
@@ -329,7 +361,7 @@ img {
 }
 
 .col-12 {
-    padding: 80px 12px 0 12px;
+    padding: 0px 12px 0 12px;
 }
 
 /* styles to weave into the mix from earlier testing: */
