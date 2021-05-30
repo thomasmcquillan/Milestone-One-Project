@@ -46,6 +46,10 @@ a:active {
     color: purple;
 }
 
+.email-me {
+    color: pink;
+}
+
 /* ----hero banner background images-------- */
 
 .hero-banner-landing { 
@@ -146,7 +150,6 @@ a:active {
 /* ----layout-styles------------ */
 
 
-
 /* ----Navigation styles-------- */
 
 .navbar-custom .bg-light {
@@ -195,13 +198,16 @@ a:active {
 }
 
 .navbar-custom .navbar-brand:hover {
-    background-color: grey;
-    -webkit-text-stroke: 1px grey;
+ 
     -webkit-text-fill-color: pink;
 }
 
 .navbar-custom .navbar-brand h1:hover {
 -webkit-text-stroke: 1px grey;
+    -webkit-text-fill-color: #fff;
+         -webkit-text-stroke: 1px rgb(75, 1, 172);
+         -webkit-text-stroke: 1px rgb(168, 210, 224);
+    /* -webkit-text-stroke: 1px rgb(24, 24, 24); */
     -webkit-text-fill-color: #fff;
 }
 
@@ -210,9 +216,14 @@ a:active {
     -webkit-text-fill-color: pink;
 }
 
-.social-links {
+.social-links a {
+    color: grey;
     display: flex;
-    font-size: 12px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100vw;
     justify-content: center;
     
 }
@@ -230,7 +241,12 @@ a:active {
     height: 50px;
     margin: 12px 23px auto auto;
     border-radius: 12%;
+}
 
+.navbar-toggler:hover {
+    -webkit-text-stroke: 1px lightblue;
+    border: 1.8px solid rgb(209, 242, 252);
+    -webkit-text-fill-color: pink;
 }
 
 button {
@@ -262,7 +278,13 @@ button {
 
     .contact-hello {
         margin-left: auto;
-        width: 
+    }
+
+    .prints-body {
+        display: block;
+        position: absolute;
+        top: 146px;
+        left: 164px;
     }
 } 
 
