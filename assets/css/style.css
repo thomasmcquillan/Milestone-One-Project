@@ -29,7 +29,6 @@ body::-webkit-scrollbar-thumb {
 a { 
     text-decoration: none;
     color: rgb(24, 41, 41);
-    border: 1px solid green;
 }
 
 a:hover,
@@ -159,13 +158,11 @@ a:active {
     background-color: rgb(253, 253, 253) !important;
 }
 
-.nav-wrapper {
+/* .nav-wrapper {
     display: flex;
     position: sticky;
     margin-bottom: auto;
-    background-color: #fff;
-    border: 1px solid yellow;
-}
+} */
 
 .navbar {
     display: flex;
@@ -213,16 +210,17 @@ a:active {
     -webkit-text-fill-color: pink;
 }
 
-.social-links a {
-    color: grey;
+.social-links {
+    color: darkgrey;
     display: flex;
+    flex-direction: column-reverse;
     font-size: 10px;
-    position: absolute;
-    bottom: 24px;
-    left: 0;
+    position: relative;
+    margin-bottom: 18px;
+    /* left: 0; */
     width: 100vw;
     justify-content: center;
-    
+    align-items: center;
 }
 
 .navbar-toggler {
@@ -392,7 +390,6 @@ img {
     color: #eee;
 }
 
-a, a:hover, a:active { 
-    
+/* a, a:hover, a:active { 
     border: 1px solid orange;
-}
+} */
