@@ -148,8 +148,9 @@ a:active {
 /* ----layout-styles------------ */
 
 .body-copy {
-    margin: 100px auto auto 40px;
-    padding-bottom: 40px;
+    margin: 100px auto auto 14px;
+    /* padding-bottom: 40px; */
+    padding: 10px 0 44px 0;
 }
 
 /* ----Navigation styles-------- */
@@ -161,12 +162,6 @@ a:active {
 .bg-light {
     background-color: rgb(253, 253, 253) !important;
 }
-
-/* .nav-wrapper {
-    display: flex;
-    position: sticky;
-    margin-bottom: auto;
-} */
 
 .navbar {
     display: flex;
@@ -180,7 +175,7 @@ a:active {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin: 0;
     position: fixed;
     top: 0;
@@ -188,7 +183,7 @@ a:active {
     background: rgb(253, 253, 253);
     width: 100vw;
     height: 100vh;
-    padding: 20vh 0 20vh 0;
+    padding: 20vh 0 20vh 30px;
     transition: all ease-in 0.6s;
 }
 
@@ -208,8 +203,8 @@ a:active {
 }
 
 .navbar-custom .navbar-brand h1:hover {
-    -webkit-text-fill-color: rgb(26, 139, 128);
-    -webkit-text-stroke: 1px rgb(20, 112, 103);
+    -webkit-text-fill-color: pink;
+    -webkit-text-stroke: 1px rgb(114, 114, 114);
     /* -webkit-text-stroke: 1px grey;
     -webkit-text-stroke: 1px rgb(75, 1, 172); */
     /* -webkit-text-stroke: 1px rgb(168, 210, 224);
@@ -252,7 +247,7 @@ a:active {
 .navbar-toggler:hover {
     border: 1.6px solid rgb(209, 242, 252);
     /* -webkit-text-stroke: 1px lightblue; */
-    -webkit-text-fill-color: rgb(20, 112, 103);
+    -webkit-text-fill-color: pink;
 }
 
 button {
@@ -283,7 +278,7 @@ button {
         left: 16px;
         top: 24px;
         width: 140px;
-        height: 100vh;
+        
         transition: all ease-in 0.3s;
     }
 
@@ -429,13 +424,13 @@ p {
 
 /* ---- Bootstrap layout overrides -------- */
 
-.row {
+/* .row {
     padding: 12px;
 }
 
 .col-12 {
     padding: 0px 12px 0 12px;
-}
+} */
 
 .center-div {
     width: 100vw;
