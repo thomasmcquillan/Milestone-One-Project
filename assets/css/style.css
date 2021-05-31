@@ -146,14 +146,13 @@ a:active {
 /* ----layout-styles------------ */
 
 .body-copy {
-    margin: 100px auto auto 14px;
-    /* padding-bottom: 40px; */
-    padding: 10px 0 44px 0;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 
 .page-content-top {
     position: absolute;
-    top: 100px;
+    top: 88px;
 }
 
 /* ----Navigation styles-------- */
@@ -179,20 +178,23 @@ a:active {
 
 .navbar-custom .navbar-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-items: left;
     flex-direction: column;
     align-items: left;
-    margin-left: 24px;
     position: fixed;
     top: 0;
     left: 0;
     background: rgb(253, 253, 253);
-     
     width: 100%;
     height: 100%;
-
-    padding: 20vh 0 20vh 30px;
+    padding: 22vh 0 22vh 11vw;
     transition: all ease-in .3s;
+    font-size: 33px;
+}
+
+.nav-link {
+    padding: 48px 0;
 }
 
 .project-sub-link {
@@ -303,7 +305,8 @@ button {
     
     .navbar-custom .navbar-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: flex-start;
         flex-direction: column;
         /* display: block; */
         text-align: left;
@@ -320,7 +323,6 @@ button {
 
     .navbar-custom .navbar-nav ul {
         display: block;
-        top: 100px;
         width: 100px;
         height: 433px;
         position: absolute;
@@ -339,15 +341,6 @@ button {
         padding: 8px 0 12px 12px;
     }
 
-    .body-copy {
-        display: fixed;
-        position: absolute;
-        margin: 0;
-        left: 170px;
-        top: 130px;
-        width: 28vw;
-    }
-
     .contact-hello {
         margin-left: auto;
     }
@@ -360,13 +353,7 @@ button {
     }
 
     .photo-about {
-        position: absolute;
-        top: 24px;
-        margin: 0;
-        right: 18px;
-        width: 50vw;
-        padding: 0;
-        z-index: 999;
+        z-index: 999999;
     }
 
     .social-links-about-page {
