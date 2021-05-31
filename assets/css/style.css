@@ -38,12 +38,12 @@ a:hover,
 }
 
 a:active {
-    color: purple;
+    color: rgb(41, 197, 215);
 }
 
-/* .active {
-    color: purple;
-} */
+.active {
+    color: rgb(41, 197, 215);
+}
 
 .email-me {
     color: pink;
@@ -171,7 +171,7 @@ a:active {
     top: 0;
 }
 
-.navbar-custom .navbar-nav {
+/* .navbar-custom .navbar-nav {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -185,6 +185,36 @@ a:active {
     height: 100vh;
     padding: 20vh 0 20vh 30px;
     transition: all ease-in 0.6s;
+} */
+
+.navbar-custom .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: left;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(253, 253, 253);
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 0 20vh 30px;
+    transition: all ease-in 0.3s;
+}
+
+.project-links {
+    display: block;
+    list-style: none;
+    margin-left: 22px;
+    padding-top: 11px;
+    border: none;
+    position: relative;
+    transition: all ease-in 0.3s;
+}
+
+.project-links li {
+    padding-top: 11px;
 }
 
 .navbar-brand {
@@ -262,24 +292,36 @@ button {
 
 @media (min-width: 992px) {
 
-    .bg-light {
+    /* .bg-light {
         display: flex;
         flex-direction: column;
         width: 200px;
         margin-right: auto;
-    }
+    } */
 
     .navbar-custom .navbar-nav {
         display: block;
-        text-align: left;
+        /* position: relative; */
+    }
+
+    .navbar-nav ul {}
+
+    .navbar-custom .navbar-nav {
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: left;
         margin: 0;
         position: fixed;
-        background: none;
-        left: 16px;
-        top: 24px;
-        width: 140px;
-        
-        transition: all ease-in 0.3s;
+        top: 0;
+        left: 0;
+        background: rgb(253, 253, 253);
+        width: 33vw;
+        height: auto;
+        padding: 20vh 0 20vh 30px;
+        transition: all ease-in 0.6s;
+
     }
 
     .navbar-custom .navbar-nav ul {
@@ -291,10 +333,32 @@ button {
         padding-bottom: 28px;
     }
 
-    .nav-link {
-        background: #fff;
+    .project-links {
+
     }
-    
+
+    /* .dropdown-menu {} */
+
+
+    /* Finally discovered how to remove the bootstrap dropdown 'caret' here: Jake Rankin @ Stack Overflow : https://stackoverflow.com/questions/62964610/css-class-to-remove-caret-in-bootstrap-dropdown-menu-being-ignored */
+
+    .dropdown-toggle.caret-off::after  {
+        display: none;
+    }      
+
+    /* .navbar-custom .navbar-nav {
+        display: block;
+        text-align: left;
+        margin: 0;
+        position: fixed;
+        background: none;
+        left: 16px;
+        top: 24px;
+        width: 140px;
+        
+        transition: all ease-in 0.3s;
+    } */
+
     .body-copy {
         display: fixed;
         position: absolute;
