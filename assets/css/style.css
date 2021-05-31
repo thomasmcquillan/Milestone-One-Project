@@ -151,10 +151,23 @@ a:active {
     padding: 10px 0 44px 0;
 }
 
+.page-content-top {
+    position: absolute;
+    top: 100px;
+}
+
 /* ----Navigation styles-------- */
 
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
 .bg-light {
-    background-color: rgb(253, 254, 254) !important;
+    display: none;
+    /* background-color: rgb(253, 254, 254) !important; */
 }
 
 .navbar {
