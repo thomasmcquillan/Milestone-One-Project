@@ -160,40 +160,40 @@ a:active {
 .navbar {
     display: flex;
     width: 100vw;
+    height: auto;
     position: fixed;
+    align-items: space-between;
+    /* background: none !important; */
     right: 0; 
     top: 0;
 }
 
 .navbar-custom .navbar-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     align-items: left;
-    margin: 0;
+    margin-left: 24px;
     position: fixed;
     top: 0;
     left: 0;
-    /* background: rgb(253, 253, 253); */
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid yellow;
+    background: rgb(253, 253, 253);
+    width: 100%;
+    height: 100%;
+
     padding: 20vh 0 20vh 30px;
-    transition: all ease-in 0.3s;
+    /* transition: all ease-in .3s; */
 }
 
-.project-links {
+.project-sub-link {
     display: block;
     list-style: none;
-    margin-left: 22px;
-    padding-top: 11px;
+    font-size: 1em;
+    margin-left: 8px;
+    padding-top: 12px;
     border: none;
     position: relative;
     transition: all ease-in 0.3s;
-}
-
-.project-links li {
-    padding-top: 11px;
 }
 
 .navbar-brand {
@@ -281,15 +281,16 @@ button {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 260px auto auto 24px;
+        padding: 240px auto auto 18px;
+        
         position: fixed;
         top: 0;
         left: 0;
         background: rgb(253, 253, 253);
         width: 220px;
-        height: 100%;
+        height: 33vh;
+        max-height: 400px;
         transition: all ease-in 300ms;
-
     }
     
 
@@ -318,27 +319,7 @@ button {
     .project-sub-link {
         margin-left: 8px;
         font-size: 13px;
-        /* display: block;
-        list-style: none;
-        margin-left: 14px;
-        padding-top: 11px;
-        border: none;
-        position: relative;
-        transition: all ease-in 0.3s; */
     }
-
-    /* .project-sub-link a {
-        padding-left: 11px;
-    } */
-
-    /* .dropdown-menu {} */
-
-
-    /* Finally discovered how to remove the bootstrap dropdown 'caret' here: Jake Rankin @ Stack Overflow : https://stackoverflow.com/questions/62964610/css-class-to-remove-caret-in-bootstrap-dropdown-menu-being-ignored */
-
-    .dropdown-toggle.caret-off::after  {
-        display: none;
-    }      
 
     .body-copy {
         display: fixed;
