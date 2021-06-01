@@ -4,7 +4,7 @@
 }
 
 html, body {
-    background: rgb(253, 254, 255);
+    background: rgb(254, 253, 253);
 }
 
 /* ---- custom scrollbars, discovered in article by Sara Cope, then modified for my purposes @ https://css-tricks.com/almanac/properties/s/scrollbar/  ---- */
@@ -24,40 +24,89 @@ body::-webkit-scrollbar-thumb {
 
 /* ---- link styles -------- */
 
-a { 
+a, a:hover, a:focus, a:active {
     text-decoration: none;
-    /* color: rgb(24, 41, 41); */
+    /* font-size: 1.1rem; */
     color: rgb(2, 120, 150);
-}
+ }
 
-a:hover,
-.navbar-custom .navbar-collapse .navbar-link a:hover {
-    text-decoration: none;
-    color: pink;
-}
+ a:hover {
+    color: rgb(250, 173, 184);
+ }
 
 a:active {
     color: rgb(41, 197, 215);
 }
 
-.active {
-    color: rgb(41, 197, 215);
+/* ----Typography styles-------- */
+
+p {
+    font-family: "Nunito Sans Light", sans-serif;
+    font-size: 1.05rem;
+    line-height: 2.10rem;
+    word-spacing: 0.05rem;
+    font-style: normal;
+    word-break: break-word;
+    /* color: rgb(22, 22, 22); */
+    color: rgb(11, 11, 11);
 }
 
-/* ----hero banner background images-------- */
+h1, h2, h3, h4, h5, .menu-toggler {
+    font-family: "Futura", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    background: transparent;
+    color: rgb(51, 51, 51);
+    /* -webkit-text-stroke: 1px rgb(51, 51, 51);
+    -webkit-text-fill-color: #eee; */
+    text-shadow:    0px 2px 4px rgba(168, 179, 180, 0.6),
+                    0 2px 1px rgba(40, 40, 41, 0.03), 
+                    0 4px 2px rgba(0,0,0,0.03), 
+                    0 8px 4px rgba(0,0,0,0.03), 
+                    0 16px 8px rgba(0,0,0,0.03),
+                    0 32px 16px rgba(0,0,0,0.03);
+}
 
-.hero-banner-landing { 
-    display: flex;
-    flex-direction: column;
+/* deciding on colors and font styling for headings, delete before launch */
+
+h1, h2, h3, h4, h5, .menu-toggler {
+    /* -webkit-text-stroke: 1px rgb(51, 51, 51);
+    -webkit-text-fill-color: #eee; */
+    font-family: 
+    color: rgb(44, 44, 44);
+    color: rgb(90, 90, 90);
+    letter-spacing: 0.01em;
+}
+
+
+
+.landing-logo h1 {
+    font-size: 13vmin;
+    background: transparent;
+    -webkit-text-stroke: 1px rgb(24, 24, 24);
+    -webkit-text-fill-color: #eee;
+    text-shadow:    0px 2px 4px rgba(52, 53, 53, 0.6),
+                    0 2px 1px rgba(40, 40, 41, 0.03), 
+                    0 4px 2px rgba(0,0,0,0.03), 
+                    0 8px 4px rgba(0,0,0,0.03), 
+                    0 16px 8px rgba(0,0,0,0.03),
+                    0 32px 16px rgba(0,0,0,0.03);
+}
+
+.landing-logo h1:hover {
+    -webkit-text-stroke: 1px rgb(75, 1, 172);
+    -webkit-text-fill-color: #fff;
+}
+
+.thom-landing h3 {
+    font-size: clamp(55px, 8vw, 77px);
+    padding: 10vmin 1rem;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/5087/5374560217_ef10d43e0d_o.jpg") no-repeat center center scroll;
-    background-size: cover !important;
+    margin: 0 0 8vmin 0;
 }
+
+/* ----hero background images-------- */
 
 .hero-banner-index { 
     display: flex;
@@ -72,7 +121,7 @@ a:active {
     background-size: cover !important;
 }
 
-.hero-banner-about {
+.hero-banner-landing { 
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -80,33 +129,9 @@ a:active {
     align-items: center;
     width: 100%;
     height: 100vh;
-    overflow: scroll;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/7148/6780308101_741d3e70e9_c.jpg") no-repeat center center scroll;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/5087/5374560217_ef10d43e0d_o.jpg") no-repeat center center scroll;
     background-size: cover !important;
-}
-
-.hero-banner-contact {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow: scroll;
-    background-size: cover !important;
-}
-
-.mono-landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    height: 269px;
-    width: 269px;
-    border-radius: 50%;
-    background: none;
-    text-decoration: none;
 }
 
 .thom-landing {
@@ -118,10 +143,8 @@ a:active {
     width: 296px;
     border-radius: 50%;
     background: none;
-    text-decoration: none;
 }
 
-.mono-landing:hover,
 .thom-landing:hover {   
     width: min(max(160px, 290px), 330px);
     height: min(max(160px, 290px), 330px);
@@ -130,29 +153,22 @@ a:active {
     transition: all .1s ease-out;
 }
 
-.mono-landing:hover a,
 .thom-landing:hover a {
-    text-decoration: none;
     text-shadow: 3px 6px 4px rgba(168, 166, 166, 0.8);
-}
-
-.landing-logo h1 {
-    font-size: 13vmin;
 }
 
 /* ----layout-styles------------ */
 
 .body-copy {
-    /* padding-top: 22vw; */
-    margin-top: 16vh;
-    
+    display: block;
+    margin-top: 160px;
     padding-bottom: 40px;
 }
 
-.page-content-top {
+/* .page-content-top {
     position: absolute;
     top: 88px;
-}
+} */
 
 /* ----Navigation styles-------- */
 
@@ -173,6 +189,12 @@ a:active {
     background: #fff;
     right: 0; 
     top: 0;
+    /* box-shadow: 2px 4px 4px rgba(95, 95, 95, 0.3); */
+    box-shadow: 0 2px 1px rgba(0,0,0,0.02), 
+                0 4px 2px rgba(0,0,0,0.02), 
+                0 8px 4px rgba(0,0,0,0.02), 
+                0 16px 8px rgba(0,0,0,0.02),
+                0 32px 16px rgba(0,0,0,0.02);
 }
 
 .navbar-custom .navbar-nav {
@@ -345,66 +367,7 @@ button {
     }
 } 
 
-
-/* ----Typography styles-------- */
-
-h1, h2, h3, h4, h5, .menu-toggler {
-    font-family: "Futura", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    background: transparent;
-    text-decoration: none;
-    color: rgb(51, 51, 51);
-    -webkit-text-stroke: 1px rgb(51, 51, 51);
-    -webkit-text-fill-color: #eee;
-    text-shadow:    0px 2px 4px rgba(168, 179, 180, 0.6),
-                    0 2px 1px rgba(40, 40, 41, 0.03), 
-                    0 4px 2px rgba(0,0,0,0.03), 
-                    0 8px 4px rgba(0,0,0,0.03), 
-                    0 16px 8px rgba(0,0,0,0.03),
-                    0 32px 16px rgba(0,0,0,0.03);
-}
-
-.landing-logo h1 {
-    background: transparent;
-    text-decoration: none;
-    -webkit-text-stroke: 1px rgb(24, 24, 24);
-    -webkit-text-fill-color: #eee;
-    text-shadow:    0px 2px 4px rgba(52, 53, 53, 0.6),
-                    0 2px 1px rgba(40, 40, 41, 0.03), 
-                    0 4px 2px rgba(0,0,0,0.03), 
-                    0 8px 4px rgba(0,0,0,0.03), 
-                    0 16px 8px rgba(0,0,0,0.03),
-                    0 32px 16px rgba(0,0,0,0.03);
-}
-
-.landing-logo h1:hover {
-    -webkit-text-stroke: 1px rgb(75, 1, 172);
-    -webkit-text-fill-color: #fff;
-}
-
-.thom-landing h3 {
-    font-size: clamp(55px, 8vw, 77px);
-    padding: 10vmin 1rem;
-    text-align: center;
-    margin: 0 0 8vmin 0;
-}
-
-p {
-    font-family: "Nunito Sans Light", sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-style: normal;
-    word-break: break-word;
-    -webkit-font-smoothing: antialiased;
-    color: rgb(22, 22, 22);
-}
-
 /* ---- Contact Form styles -------- */
-
-
 
 /* ----Photo styles -------- */
 
