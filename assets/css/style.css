@@ -72,24 +72,6 @@ h1, h2, h3, h4, h5, .menu-toggler {
     -webkit-text-fill-color: #eee; */
 }
 
-/* .landing-logo h1 {
-    font-size: 13vmin;
-    background: transparent;
-    -webkit-text-stroke: 1px rgb(24, 24, 24);
-    -webkit-text-fill-color: #eee;
-    text-shadow:    0px 2px 4px rgba(52, 53, 53, 0.6),
-                    0 2px 1px rgba(40, 40, 41, 0.03), 
-                    0 4px 2px rgba(0,0,0,0.03), 
-                    0 8px 4px rgba(0,0,0,0.03), 
-                    0 16px 8px rgba(0,0,0,0.03),
-                    0 32px 16px rgba(0,0,0,0.03);
-} */
-
-/* .landing-logo h1:hover {
-    -webkit-text-stroke: 1px rgb(75, 1, 172);
-    -webkit-text-fill-color: #fff;
-} */
-
 .thom-landing h3 {
     font-size: clamp(55px, 8vw, 77px);
     padding: 10vmin 1rem;
@@ -175,12 +157,13 @@ h1, h2, h3, h4, h5, .menu-toggler {
     display: flex;
     width: 100vw;
     height: auto;
+    height: 70px;
     position: fixed;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background: #fff;
     right: 0; 
     top: 0;
-    /* box-shadow: 2px 4px 4px rgba(95, 95, 95, 0.3); */
     box-shadow: 0 2px 1px rgba(0,0,0,0.02), 
                 0 4px 2px rgba(0,0,0,0.02), 
                 0 8px 4px rgba(0,0,0,0.02), 
@@ -191,9 +174,7 @@ h1, h2, h3, h4, h5, .menu-toggler {
 .navbar-custom .navbar-nav {
     display: flex;
     justify-content: space-evenly;
-    justify-items: left;
     flex-direction: column;
-    align-items: left;
     position: fixed;
     top: 0;
     left: 0;
@@ -213,10 +194,6 @@ h1, h2, h3, h4, h5, .menu-toggler {
     z-index: 999;
     margin: 8px auto auto 12px;
 }
-
-/* .navbar-custom .navbar-brand h1 {
-    font-size: 2.6rem;
-} */
 
 .navbar-custom .navbar-brand:hover {
     color: darkgrey;
@@ -242,7 +219,7 @@ h1, h2, h3, h4, h5, .menu-toggler {
     justify-content: center;
     width: 48px;
     height: 48px;
-    margin: 16px 28px auto auto;
+    margin: 11px 28px auto auto;
     border-radius: 12%;
 }
 
@@ -257,12 +234,6 @@ h1, h2, h3, h4, h5, .menu-toggler {
 
 button {
     border-radius: 5px;
-    /*---- smooth box-shadow snippet borrowed then tweaked, from: Tobias Ahlin at: https://tobiasahlin.com/blog/layered-smooth-box-shadows/ ----*/
-    box-shadow: 0 2px 1px rgba(0,0,0,0.03), 
-                0 4px 2px rgba(0,0,0,0.03), 
-                0 8px 4px rgba(0,0,0,0.03), 
-                0 16px 8px rgba(0,0,0,0.03),
-                0 32px 16px rgba(0,0,0,0.03);
 }
 
 @media (min-width: 992px) {
@@ -302,22 +273,16 @@ button {
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: flex-start;
-        margin: 0;
+        justify-content: space-between;
         position: fixed;
         background: none;
         justify-items: center;
         top: 0px;
-        background: lightgrey;
-        height: 100%;
+        background: rgb(253, 253, 253);
+        height: 300px;
         width: 177px;
         transition: all ease-in 0.3s;
-        padding: 222px 11px 0 0;
-    }
-
-    .nav-link {
-        display: grid;
-        place-items: center;
+        padding: 181px 11px 0 0;
     }
 
     .body-copy {    
