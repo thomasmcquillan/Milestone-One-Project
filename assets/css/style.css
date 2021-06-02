@@ -25,11 +25,11 @@ body::-webkit-scrollbar-thumb {
         from: Tobias Ahlin at: https://tobiasahlin.com/blog/layered-smooth-box-shadows/ --*/
 
 .navbar, button {
-    box-shadow: 0 2px 1px rgba(55, 55, 56, 0.01), 
-                0 4px 2px rgba(55, 55, 56, 0.01), 
-                0 8px 4px rgba(55, 55, 56, 0.01), 
-                0 16px 8px rgba(55, 55, 56, 0.01),  
-                0 32px 16px rgba(55, 55, 56, 0.01);
+    box-shadow: 0 2px 1px rgba(55, 55, 56, 0.03), 
+                0 4px 2px rgba(55, 55, 56, 0.03), 
+                0 8px 4px rgba(55, 55, 56, 0.03), 
+                0 16px 8px rgba(55, 55, 56, 0.03),  
+                0 32px 16px rgba(55, 55, 56, 0.03);
 }  
 
 /* ============================== Link Styles =============================== */
@@ -60,13 +60,14 @@ p {
     color: rgb(11, 11, 11);
 }
 
-h1, h2, h3, h4, h5, .menu-toggler,
-.navbar-custom .navbar-brand {
+h1, h2, 
+h3, h4, h5, 
+.menu-toggler {
     font-family: "Futura", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-style: normal;
     letter-spacing: 0.03em;
-    text-shadow:    0px 2px 4px rgba(168, 179, 180, 0.6),
+    text-shadow:    0px 2px 4px rgba(168, 179, 180, 0.4),
                     0 2px 1px rgba(40, 40, 41, 0.03), 
                     0 4px 2px rgba(0,0,0,0.03), 
                     0 8px 4px rgba(0,0,0,0.03), 
@@ -81,9 +82,59 @@ h1, h2, h3, h4, h5, .menu-toggler {
 }
 
 .navbar-custom .navbar-brand {
+    font-family: "Futura", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+.navbar-custom .navbar-brand {
     font-size: 33px;
     letter-spacing: 0.01em;
-    color: rgb(66, 66, 66);
+    color: rgb(121, 120, 120);
+}
+
+/* testing navbar-brand font size  */
+
+.navbar-custom .navbar-brand {
+    font-size: 2px;
+    line-height: 13px;
+    line-height: 18px;
+    font-size: 17px;
+    letter-spacing:1px;
+    color: rgba(121, 121, 121, 0.938);
+
+    text-shadow:    0px 2px 4px rgba(168, 179, 180, 0.4),
+                    0 2px 1px rgba(40, 40, 41, 0.03), 
+                    0 4px 2px rgba(0,0,0,0.03), 
+                    0 8px 4px rgba(0,0,0,0.03), 
+                    0 16px 8px rgba(0,0,0,0.03),
+                    0 32px 16px rgba(0,0,0,0.03);
+}    
+
+.navbar-brand {
+    z-index: 1;
+    margin: 8px auto auto 12px;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: rgba(70, 69, 69, 0.781);
+    color: rgb(211, 210, 210);
+    /* transition: all ease-out 3ms; */
+    text-shadow: none;
+}
+
+.thom-brand {
+    font-size: 31.5px;
+    color: black;
+    font-size: 35px;
+    letter-spacing: 0;
+    text-shadow:    0px 2px 4px rgba(168, 179, 180, 0.4),
+                    0 2px 1px rgba(40, 40, 41, 0.03), 
+                    0 4px 2px rgba(0,0,0,0.03), 
+                    0 8px 4px rgba(0,0,0,0.03), 
+                    0 16px 8px rgba(0,0,0,0.03),
+                    0 32px 16px rgba(0,0,0,0.03);
 }
 
 .thom-landing h3 {
@@ -161,10 +212,6 @@ h1, h2, h3, h4, h5, .menu-toggler {
     z-index: 999;
 }
 
-nav {
-    background: rgb(255, 255, 255);
-}
-
 .navbar {
     display: flex;
     width: 100vw;
@@ -188,23 +235,13 @@ nav {
     background: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
-    padding: 22vh 0 22vh 11vw;
+    padding: 22vh 0 22vh 11vw; 
     transition: all ease-in .3s;
     font-size: 18px;
 }
 
 .nav-link {
     padding: 24px 0;
-}
-
-.navbar-brand {
-    z-index: 1;
-    margin: 8px auto auto 12px;
-}
-
-.navbar-custom .navbar-brand h1:hover {
-    background: rgb(253, 221, 226);
-    transition: all ease-out 3ms;
 }
 
 .navbar-toggler {
@@ -223,43 +260,28 @@ nav {
     line-height: 2.3rem;
 }
 
-
-.thom-toggler {
-  background-image: url("assets/images/thom-toggler.png");
-  position: fixed;
-  right: 84px;
-  top: -2px;
-  width: 8px;
-  height: 8px;
-  z-index: 2;
-}
-
-
 .navbar-toggler h1 {
     line-height: 2.3rem;
 }
 
 .navbar-toggler:hover {
-    border: 1.6px solid rgb(209, 242, 252);
-    translate: 
+    border: 1.6px solid rgb(149, 149, 149);
 }
 
-.navbar-toggler:active {
-    color: yellow;
-}
 
 /* ============================== Photo Styles =============================== */
 
 .photo-wrap {
-    margin-top: 120px;
+    margin-top: 180px;
 }
-/* 
-.center-div {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-} */
+
+.photo-frame {
+    padding-top: 200px;
+}
+
+img {
+    border-radius: 2px;
+}
 
 /* ============================== Media Queries =============================== */
 
@@ -268,11 +290,6 @@ nav {
     #nav-wrapper {
         width: 88px
     }
-
-    /* .navbar-custom > ul {
-        position: fixed;
-        left: 0;
-    } */
 
     nav {
         display: flex;

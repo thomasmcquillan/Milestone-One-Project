@@ -73,7 +73,7 @@ artist sites often embrace a strategy of 'less-is-more'. Their work is left to s
 
     * While I chose to keep the navigation and pages white, I was keen to introduce some character in small splashes of color in certain page elements, including a custom scrollbar and link/toggle 'hover:' psuedo states. It may at first seem to betray my philosophy about keeping elements white to allow the photos space to breath. However, my rational is that any splashes or pops of colour are only introduced when interacting with a navigation element - at a time when your attention has already shifted away from the photographs. 
 
-    ### Typography
+* ### Typography
     * Adobe Fonts Library was used to source all fonts used in the project. 
 
     * For all headings, links and the navbar-brand logo I selected the font-family Futura. Futura is considered a timeless classic of the font world, looking just as modern today as when it was released by The Bauer Type Foundry in 1927. Being a sans-serif typeface, Futura boasts a clean, modern look which makes it perfect for statement text such as logos, titles and headlines. I opted to also use it for my navigation menu items, as it lends them some weight, without appearing too blocky - due to the font-weight and size.
