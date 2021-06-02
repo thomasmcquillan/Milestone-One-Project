@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    background: rgb(234, 238, 238);
 }
 
 /* -- Custom styled scrollbars, discovered in article by Sara Cope, then modified 
@@ -20,6 +19,11 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: rgb(161, 202, 211);
+}
+
+html, body {
+    scroll-behavior: smooth;
+    background: rgb(234, 238, 238);
 }
 
 /*-- smooth box-shadow snippet borrowed then tweaked and later adapted for text-shadow, 
@@ -40,13 +44,22 @@ a, a:hover, a:focus, a:active {
     color: rgb(2, 149, 185);
     font-weight: 600;
 }
-
+/* 
 a:hover {
     color: rgb(250, 173, 184);
 }
 
-a:active {
+ {
     color: rgb(41, 197, 215);
+} */
+
+
+.navbar-custom .navbar-nav .nav-item a {
+    color: rgb(216, 216, 216);
+}
+
+.navbar-custom .navbar-nav .nav-item a:hover { 
+    color: pink;
 }
 
 /* ============================== Font styles  =============================== */
@@ -77,21 +90,16 @@ h1, h2, h3, h4, h5, .menu-toggler {
 }
 
 .navbar-custom .navbar-brand {
-    font-family: "Futura", Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: 0.03em;
-}
-
-.navbar-custom .navbar-brand {
-    font-size: 33px;
-    letter-spacing: 0.01em;
-    color: rgb(121, 120, 120);
+   
 }
 
 /* testing navbar-brand font size  */
 
 .navbar-custom .navbar-brand {
+     /* font-size: 33px;
+    letter-spacing: 0.01em;
+    color: rgb(121, 120, 120); */
+
     font-size: 2px;
     line-height: 13px;
     line-height: 18px;
@@ -110,6 +118,7 @@ h1, h2, h3, h4, h5, .menu-toggler {
     color: rgb(211, 210, 210);
     transition: all ease-out 3ms;
     text-shadow: none;
+    color: pink;
 }
 
 .thom-brand {
@@ -117,6 +126,10 @@ h1, h2, h3, h4, h5, .menu-toggler {
     color: rgb(47, 47, 47);
     font-size: 35px;
     letter-spacing: 0;
+}
+
+.thom-brand:hover {
+    color: pink;
 }
 
 .thom-landing h3 {
@@ -259,16 +272,22 @@ h1, h2, h3, h4, h5, .menu-toggler {
 
 /* ============================== Photo Styles =============================== */
 
-.photo-wrap {
-    margin-top: 180px;
+ .photo-wrap {
+    margin-top: 80px;
+    padding-right: none;
+    padding-left: none;
 }
 
-.photo-frame {
-    padding-top: 200px;
+.photo-wrap .col-12 {
+    padding: 0 3px;
 }
+
+/* .photo-frame {
+    padding-top: 200px;
+}  */
 
 img {
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 /* ============================== Media Queries =============================== */
@@ -286,18 +305,34 @@ img {
         align-content: center;
     }
 
-    .navbar {
+    /* .navbar {
         width: 100px;
         height: 100%;
-    }
+    } */
 
     .navbar-custom .navbar-nav {
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         justify-items: center;
-        height: 300px;
-        width: 177px;
-        padding: 181px 11px 0 0;
+        height: 70px;
+        
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 0 28px 0 55vw;
+        width: 100vw;
+        
+    }
+
+    .nav-item { 
+        background: none;
+        font-size: 28px;
+    }
+    
+    .navbar-nav .nav-item  {
+        color: yellow;
     }
 
     .body-copy {    
@@ -311,4 +346,20 @@ img {
         top: 146px;
         left: 164px;
     }
+
+    .photo-wrap {
+        margin-top: 180px;
+    }
+
+    .photo-frame {
+        padding-top: 200px;
+    }    
+
+    .photo-wrap .col-12 {
+        padding: 0 12px;
+
+    }
+        
+    
 }
+
