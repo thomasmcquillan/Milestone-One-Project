@@ -1,4 +1,4 @@
-# Thomas McQuillan | Artist Website / Portfolio
+# Thomas McQuillan | Artist Website 
 
 [View the live website here.](https://thomasmcquillan.github.io/Milestone-One-Project/landing-page.html)
 
@@ -45,8 +45,6 @@ artist sites often embrace a strategy of 'less-is-more'. Their work is left to s
 
     * ### Client Goals
 
-    * #### "As site owner.."
-
         * As site owner _and_ photographer, it is critical that all photographic content displays optimally, irrespective of the device size/type/resolution used to access the site.
 
         * As site owner I would like visitors to be able to contact me via my email to discuss potential commissions, collaboration or buying prints.
@@ -71,7 +69,7 @@ artist sites often embrace a strategy of 'less-is-more'. Their work is left to s
 ## Design
 
 * ### Colour Scheme
-    * As the site is intended as a space for the appreciation of photography, pages function almost as a gallery wall - adopting an off-white background, framed by a white navigation bar, with black name/logo and toggle button. The introduction of a subtle drop shadow separates the navbar from the page content without introducing an abrupt border or coloured navbar that would distract from the photographs. 
+    * As the site is intended as a space for the appreciation of photography, pages function much like a gallery wall - adopting an off-white background, framed by a white navigation bar, with black name/logo and toggle button. The introduction of a subtle drop shadow separates the navbar from the page content without introducing an abrupt border or coloured navbar that would distract from the photographs. 
 
     * While I chose to keep the navigation and pages white, I was keen to introduce some character in small splashes of color in certain page elements, including a custom scrollbar and link/toggle 'hover:' psuedo states. It may at first seem to betray my philosophy about keeping elements white to allow the photos space to breath. However, my rational is that any splashes or pops of colour are only introduced when interacting with a navigation element - at a time when your attention has already shifted away from the photographs. 
 
@@ -224,17 +222,15 @@ etc..
     * #### "As site owner it is important that the website sits happily within the genre of artist/photographer websites, while still offering the odd playful twist and a sense of character."
         
         * From the outset I was keen to develop a site that could function as a bespoke online space where I can host a selection of my best photographic work. Often the greatest difficulty for artists and 
-        designers is not deciding what to keep in, but what to leave out. It is important to provide enough content - but too much and you risk diluting the message. This challenge presented itself
-        not only in how many photos and projects
-        photography into art and design it was very tempting to expand my project to include non-photographic works. However I came to realise that such scope-creep was potentially detrimental so
-        I stuck to my original plan. I 
+        designers is not deciding what to keep in, but what to leave out. Sure, it is important to provide enough content - but too much and you risk diluting the message. This challenge manifested not only
+        in deciding how many photos to include, but given that my interests extend throughout art and design, it was tempting to expand my project to include non-photographic works. However I came to 
+        realise that such scope-creep could easily derail the project's original vision. I think the resulting project negotiates an uneasy threshold between the loose conventions of 
+        modern artist websites and a playful space of greater character.
 
 ## Further Testing
 * ... ..
 * .. ...
 * .. ...
-* ... ..
-* .. .. .
 
 ## Known Bugs
 * .. ...
