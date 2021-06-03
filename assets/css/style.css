@@ -303,10 +303,6 @@ img {
 
 /* ============================== Media Queries =============================== */
 
-@media (min-width: 700px) {
-    
-}
-
 @media (min-width: 992px) {
 
     #nav-wrapper {
@@ -329,7 +325,7 @@ img {
         align-items: center;
         justify-content: space-between;
         height: 70px;
-        padding: 0 28px 0 60vw;
+        padding: 0 28px 0 55vw;
         width: 100vw;
     }
 
