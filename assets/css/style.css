@@ -96,12 +96,14 @@ h1, h2, h3, h4, h5, .menu-toggler {
     margin: 8px auto auto 12px;
 }
 
-.navbar-custom .navbar-brand:hover {
+.navbar-custom .navbar-brand:hover,
+.thom-brand:hover {
     color: rgba(70, 69, 69, 0.781);
     color: rgb(211, 210, 210);
     transition: all ease-out 3ms;
-    text-shadow: none;
-    color: rgb(196, 118, 127);
+    color: rgb(0, 114, 116);
+    /* text-shadow: none; */
+    /* color: rgb(196, 118, 127); */
 }
 
 .thom-brand {
@@ -113,10 +115,6 @@ h1, h2, h3, h4, h5, .menu-toggler {
     display: flex;
     position: fixed;
     top: 14.5px;
-}
-
-.thom-brand:hover {
-    color: pink;
 }
 
 .thom-landing h3 {
@@ -205,13 +203,12 @@ h1, h2, h3, h4, h5, .menu-toggler {
 .navbar {
     display: flex;
     width: 100vw;
-    height: auto;
     height: 68px;
     position: fixed;
     flex-direction: column;
     justify-content: center;
     background: rgb(234, 238, 238);
-    right: 0; 
+    right: 0;
     top: 0;
 }
 
@@ -231,7 +228,7 @@ h1, h2, h3, h4, h5, .menu-toggler {
 }
 
 .nav-link {
-    padding: 24px 0;
+    padding: 22px 0;
 }
 
 .navbar-toggler {
@@ -239,7 +236,7 @@ h1, h2, h3, h4, h5, .menu-toggler {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 1;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -256,25 +253,31 @@ h1, h2, h3, h4, h5, .menu-toggler {
     background: rgb(238, 242, 242);
 }
 
+.navbar-toggler h1:hover {
+    color: rgb(0, 114, 116);
+}
+
 .navbar-toggler:hover {
-    box-shadow: 0 2px 1px rgba(88, 88, 90, 0.04), 
-                0 4px 2px rgba(88, 88, 90, 0.04), 
-                0 8px 4px rgba(88, 88, 90, 0.04),
-                0 16px 8px rgba(88, 88, 90, 0.04),  
-                0 32px 16px rgba(88, 88, 90, 0.04);
+    box-shadow: 0 2px 1px rgba(88, 88, 90, 0.03), 
+                0 4px 2px rgba(88, 88, 90, 0.03), 
+                0 8px 4px rgba(88, 88, 90, 0.03),
+                0 16px 8px rgba(88, 88, 90, 0.02),  
+                0 32px 16px rgba(62, 62, 95, 0.01);
 }
 
 
 /* ============================== Photo Styles =============================== */
 
-#project-image-gallery {
+.gallery-wrapper {
     display: flex;
+    position: absolute;
+    top: 67px;
+    border: 1px solid limegreen;
+    width: 100vw;
 }
 
 .photo-wrap {
-    margin-top: the 70px;
-    padding-right: none;
-    padding-left: none;
+    margin-top: 70px;
 }
 
 .gallery-frame {
@@ -283,6 +286,7 @@ h1, h2, h3, h4, h5, .menu-toggler {
 
 .photo-frame {
     padding-top: 200px;
+    display: flex;
 } 
 
 .gallery-photo-padding {
@@ -294,6 +298,9 @@ h1, h2, h3, h4, h5, .menu-toggler {
 }
 
 img {
+    /* testing max-width to make sure images never look pixellated and are not too small for the required layout */
+    /* max-width: 100%; */
+    display: block;
     border-radius: 2px;
     box-shadow: 0 2px 1px rgba(156, 156, 156, 0.02), 
                 0 4px 2px rgba(156, 156, 156, 0.02),
@@ -350,7 +357,9 @@ img {
         left: 164px;
     }
 
-    .photo-wrap {
+/* duplication / function overlap in below styles, decide if one can go and adjust affected elements given classes */
+
+.photo-wrap {
         margin-top: 180px;
     }
 
@@ -358,10 +367,10 @@ img {
         padding-top: 180px;
     }
 
-    .gallery-block-spacer {
+    /* .gallery-block-spacer {
         display: block;
         margin-left: 33vw;
-    }
+    } */
 
     .photo-wrap .col-12 {
         padding: 0 12px;
