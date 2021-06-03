@@ -98,12 +98,10 @@ h1, h2, h3, h4, h5, .menu-toggler {
 
 .navbar-custom .navbar-brand:hover,
 .thom-brand:hover {
-    color: rgba(70, 69, 69, 0.781);
-    color: rgb(211, 210, 210);
     transition: all ease-out 3ms;
     color: rgb(0, 114, 116);
-    /* text-shadow: none; */
     /* color: rgb(196, 118, 127); */
+    transition: all ease-out 3ms;
 }
 
 .thom-brand {
