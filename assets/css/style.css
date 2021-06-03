@@ -9,7 +9,7 @@
         for my project @ https://css-tricks.com/almanac/properties/s/scrollbar/  -- */
 
 body::-webkit-scrollbar {
-    width: 0.20rem;
+    width: 0.18rem;
     height: 0.20rem;
 }
 
@@ -41,18 +41,9 @@ html, body {
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
-    color: rgb(2, 149, 185);
+    color: rgb(3, 130, 161);
     font-weight: 600;
 }
-/* 
-a:hover {
-    color: rgb(250, 173, 184);
-}
-
- {
-    color: rgb(41, 197, 215);
-} */
-
 
 .navbar-custom .navbar-nav .nav-item a {
     color: rgb(160, 158, 158);
@@ -83,26 +74,22 @@ h3, h4, h5,
     letter-spacing: 0.03em;
 }
 
-/* deciding on colors and font styling for headings, delete before launch */
+/* deciding on colors and font styling for headings - remove before project submission  */
 
 h1, h2, h3, h4, h5, .menu-toggler {
     color: rgb(90, 90, 90);
 }
 
-/* testing navbar-brand font size  */
+/* testing navbar-brand font size - remove before project submission */
 
 .navbar-custom .navbar-brand {
-     /* font-size: 33px;
-    letter-spacing: 0.01em;
-    color: rgb(121, 120, 120); */
-     
     font-size: 2px;
     line-height: 13px;
     line-height: 18px;
     font-size: 17px;
     letter-spacing:1px;
     color: rgba(121, 121, 121, 0.938);
-}    
+}
 
 .navbar-brand {
     z-index: 1;
@@ -197,6 +184,14 @@ h1, h2, h3, h4, h5, .menu-toggler {
     padding-bottom: 40px;
 }
 
+.project-caption {
+    display: block;
+    text-align: left;
+    padding: 4px 0 0 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+
 /* ============================== Navigation Styles =============================== */
 
 #nav-wrapper {
@@ -231,7 +226,7 @@ h1, h2, h3, h4, h5, .menu-toggler {
     width: 100%;
     height: 100%;
     padding: 22vh 0 22vh 11vw; 
-    /* transition: all ease-in .3s; */
+    transition: all ease-in .3s;
     font-size: 18px;
 }
 
@@ -273,24 +268,36 @@ h1, h2, h3, h4, h5, .menu-toggler {
 /* ============================== Photo Styles =============================== */
 
  .photo-wrap {
-    margin-top: 80px;
+    margin-top: the 70px;
     padding-right: none;
     padding-left: none;
 }
 
-.photo-wrap .col-12 {
-    padding: 0 3px;
+.gallery-frame {
+        padding-top: 8vw;
+    }
+
+.photo-frame {
+    padding-top: 200px;
+} 
+
+.gallery-photo-padding {
+    padding-top: 122px;
 }
 
-/* .photo-frame {
-    padding-top: 200px;
-}  */
-
 img {
-    border-radius: 3px;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px rgba(156, 156, 156, 0.02), 
+                0 4px 2px rgba(156, 156, 156, 0.02),
+                0 8px 4px rgba(156, 156, 156, 0.02),
+                0 16px 8px rgba(156, 156, 156, 0.02);
 }
 
 /* ============================== Media Queries =============================== */
+
+@media (min-width: 700px) {
+    
+}
 
 @media (min-width: 992px) {
 
@@ -305,25 +312,18 @@ img {
         align-content: center;
     }
 
-    /* .navbar {
-        width: 100px;
-        height: 100%;
-    } */
-
     .navbar-custom .navbar-nav {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        justify-items: center;
+        /* justify-items: center; */
         height: 70px;
-        
         position: fixed;
         top: 0;
         right: 0;
-        padding: 0 28px 0 55vw;
+        padding: 0 28px 0 60vw;
         width: 100vw;
-        
     }
 
     .nav-item { 
@@ -352,14 +352,22 @@ img {
     }
 
     .photo-frame {
-        padding-top: 200px;
-    }    
+        padding-top: 180px;
+    }
+
+    .gallery-block-spacer {
+        display: block;
+        margin-left: 33vw;
+    }
+
+    .gallery-photo-padding {
+        padding-right: 0;
+        padding-left: 40px;
+    }
 
     .photo-wrap .col-12 {
         padding: 0 12px;
 
     }
-        
-    
 }
 
