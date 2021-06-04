@@ -10,7 +10,9 @@ modern baubles like pop-up modals, forms, icons or buttons.
 
 The finished Home / Landing / Index page:
 
-![Home Page mockups, courtesy of amiresponsive.com](https://thomasmcquillan.github.io/assets/documentation/readme-image-assets/homepage-mockups.jpeg) "Thomas McQuillan Portfolio Website")
+<p align="center">
+    <img width="100%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/homepage-mockups.jpeg" alt="mockups of site's home page showing responsivity">
+</p>
 
 ## User Experience (UX)
 
@@ -77,30 +79,34 @@ The finished Home / Landing / Index page:
 
     * While I chose to keep the navigation and pages white, I was keen to introduce some character in small splashes of color in certain page elements, including a custom scrollbar and link/toggle 'hover:' psuedo states. It may at first seem to betray my philosophy about keeping elements white to allow the photos space to breath. However, my rational is that any splashes or pops of colour are only introduced when interacting with a navigation element - at a time when your attention has already shifted away from the photographs. 
 
-*   ![Thematic color choices](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/color-for-thematic-goals.jpeg "Thomas McQuillan's Portfolio Website")
-
+ 
+<p align="center">
+    <img width="460" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/color-for-thematic-goals.jpeg" alt="sampling color from the sites photos for subtle theming">
+</p>
 
 * ### Typography
     * Adobe Fonts Library was used to source all fonts used in the project. 
 
     * For all headings, links and the navbar-brand logo I selected the font-family Acumin Pro. Acumin pro has a timeless look, and has a lovely lightness to it. I originally was going to use Futura, but in the end decided it was too heavy and blocky.
 
-*   ![Adobe Fonts Acumin Pro Light](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/adobe-acumin-pro-light-font.jpeg "Adobe Acumin Pro Light, as used in Navigation menu and Brand")
+<p align="center"><img width="60%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/adobe-acumin.png" alt="Adobe Acumin Pro Light used in navigation menu items and brand">
+</p>
 
-    * Despite my site being intentionally light in text elements, I was cognizant of the importance of not the just readability of body copy, but also the mood it lends to the site as a whole.
+    * Despite the client's desire not too have screeds of text elements, I was also cognizant of the importance of not the just readability of body copy, but also the mood it lends to the site as a whole.
 
 * ### Imagery
     * All photographs are the work of the Artist / Developer.
 
 ## Wireframes
-* The wireframes for the project were designed in Adobe XD. The site design has changed in key ways over the project - which is evidently a real and serious challenge when the developer is also the client. The desire to 
-get everything looking exactly as you would like can overwhelm and draw out the whole project. Such scope creep would usually be either impossible - or potentially very costly to the client. The cost in this case was born by
-myself in the extra hours, days and weeks it added to the process. However, I wanted everything just right so I was willing to take the time to get there. The development itself was relatively straightforward in comparison to 
-the aesthetic design decisions.
+* I made the wireframes for the project using Adobe XD. The website design has evolved over the course of the project.
+    A common complaint of developers is to have a designer looking over their shoulder, constantly asking to change key parts of the design.
+    This problem is magnified when the client IS the developer. The desire to tweak and retweak can be inescapable and draw out the length of 
+    the project. Scope creep is real, and can be costly - in dollars as a client.. and time as a developer. In the end I was willing to take
+    the time to get things right.
 
-* Below is an image of the site as a whole, as conceived at the project outset. To see each page and element in greater detail, please vist the linked files here:
+* The image below gives an overview of the site's structure, as conceived of at the beginning of the project. To see each page and element in greater detail, please vist the linked files here:
 
-*   ![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png "Wireframes for Thomas McQuillan's Portfolio Website")
+![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png "Wireframes for Thomas McQuillan's Portfolio Website")
 
 ## Features
 * The site is responsive across all device sizes and viewports, from the very small iPhone-SE (original) to 27" 4k desktop monitors. 
@@ -116,7 +122,8 @@ the aesthetic design decisions.
 1. [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 * Bootstrap was utilised to aid in the styling of key website elements such as the Navigation Bar and for it's powerful responsive layout tools such as the row and column classes. I opted for Bootstrap version 4.6 over the recently release 5.0 to ensure stability.
 2. [Adobe Fonts](https://fonts.adobe.com/)
-* Adobe Fonts was used for typography across the site. Font-families were imported into the style.css stylesheet file. 'Futura' was selected as a display font, and 'Kabel Neue' for body copy and links.
+* Adobe Fonts was used for typography across the site. Adobe fonts are embedded in the head of the html with a code linked to your Adobe CC account and project. 'Futura' was initially selected, but swapped later for the lighter Acumin Pro Light. I selected
+  Nunito sans Light" for my body sections. 
 3. [Adobe Color](https://color.adobe.com/)
 * Adobe Color helped in the selection of color-schemes and extracting gradients from images used on the site. This helped to thematically align and support the photographic content with the site elements and interface.
 4. [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
@@ -303,6 +310,7 @@ CSS Tricks;
 
 [Kevin Powell and his wonderful sharing of CSS knowledge. His codepen account:](https://codepen.io/kevinpowell/pens/popular)
 
+[Super Simple Keyframe Slider, by Stephen Scaff](https://github.com/stephenscaff/keyframes-slider/blob/master/demo1.html)
 ..
 ## Content
 

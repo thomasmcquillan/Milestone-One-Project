@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 /* ============================== Global Styles =============================== */
 
 * {
@@ -108,24 +110,6 @@ h3, h4, h5{
     padding: 4px 0 0 0;
     font-size: 13px;
     font-weight: 300;
-}
-
-.bold-block-text {
-    background: none;
-    margin: 40px auto;
-    font-family: 'Futura', sans-serif;
-    font-size: 80px;
-    line-height: 90px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    letter-spacing: 5px;
-    text-shadow: -1px 1px 0 #41ba45,
-                    1px 1px 0 #c63d2b,
-                    1px -1px 0 #42afac,
-                    -1px -1px 0 #c6c23f;
-}
-
 }
 
 /* ============================== Navigation Styles =============================== */
@@ -283,99 +267,6 @@ img {
         left: 164px;
     }
 }
- 
-
-/* =======================================================================
-"Super Simple Slider" with keyframes by the brilliant Stephen Scaff at:
-
-https://github.com/stephenscaff/keyframes-slider/blob/master/demo1.html =*/
-
-#thom-index-slide-1 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle@0.75x.jpg');
-}
-
-#thom-index-slide-2 {
-    background-image: url('../images/slow_square.jpeg');
-}
-
-#thom-index-slide-3 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle@0.55x.jpg');
-}
-
-#thom-index-slide-4 {
-    background-image: url('../images/slow_square.jpeg');
-}
-
-#thom-index-slide-5 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle@0.75x.jpg');
-}
-
-#thom-index-slide-6 {
-    background-image: url('../images/slow_square.jpeg');
-}
-
-.imgbox {
-    display: flex; 
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-position: center center;
-    background-size: cover; 
-}
-
-#thom-index-slide-1 {
-    position: absolute;
-    z-index: 16;
-    animation: xfade 15s -0s infinite;
-    animation-timing-function: ease-in-out;
-}
-/* ================================= */
-#thom-index-slide-2 {
-    position: absolute;
-    z-index: 15;
-    animation: xfade 15s -5s infinite;
-    animation-timing-function: ease-in-out;
-}
-
-#thom-index-slide-3 {
-    position: absolute;
-    z-index: 14;
-    animation: xfade 15s -10s infinite;
-    animation-timing-function: ease-in-out;
-    }
-
-    #thom-index-slide-4 {
-    position: absolute;
-    z-index: 13;
-    animation: xfade 15s -15s infinite;
-    animation-timing-function: ease-in-out;
-    }
-
-    #thom-index-slide-5 {
-    position: absolute;
-    z-index: 12;
-    animation: xfade 15s -20s infinite;
-    animation-timing-function: ease-in-out;
-    }
-
-    #thom-index-slide-6 {
-    position: absolute;
-    z-index: 11;
-    animation: xfade 15s -25s infinite;
-    animation-timing-function: ease-in-out;
-    }
-
-    @keyframes xfade{
-
-        0% {opacity: 0;}
-        20% {opacity: 1;}
-        33% {opacity: 1;}
-        53% {opacity: 0;}
-        100% {opacity: 0;}
-    }
-
-/* ===================================================================== */
-
 
 /* @media (min-width: 1400px) {
     .navbar-custom .navbar-brand {
@@ -383,3 +274,199 @@ https://github.com/stephenscaff/keyframes-slider/blob/master/demo1.html =*/
         margin-left: 20vw;
         margin-right: auto;
     } */
+
+
+/* <!-- <div class="row container-fluid mx-auto pb-2 index-welcome-image-wrapper">
+    <div class="col-13 mx-auto pb-2 my-auto mb-auto img-fluid index"><img src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle.jpg"
+        alt="green muscle car at roadside in spring"
+        srcset="
+            https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle.jpg 1400w,
+            https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle@0.75x.jpg 1050w,
+            https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle@0.55x.jpg 700w,
+            https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle@0.33x.jpg 462w,
+            https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle@0.25x.jpg 350w"
+        sizes="(min-width: 1400px) 1400px, 100vw">
+    </div>
+</div> --> */
+
+    /* ==================testing carousel ========== */
+
+.index-fade {
+    position: 
+}
+
+
+.fadein { 
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite; 
+    position:absolute; 
+    left:0; 
+    right:0; 
+}
+
+.fadein img:nth-child(1) { animation-delay: 0s; }
+.fadein img:nth-child(2) { animation-delay: 3s; }
+.fadein img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes fade {
+  0%        { opacity: 0; }
+  11.11%    { opacity: 1; }
+  33.33%    { opacity: 1; }
+  44.44%    { opacity: 0; }
+  100%  { opacity: 0; }
+}
+
+
+/* .fadein img { 
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite; 
+    position:absolute; 
+    left:0; 
+    right:0; 
+}
+
+.fadein img:nth-child(1) { animation-delay: 0s; }
+.fadein img:nth-child(2) { animation-delay: 3s; }
+.fadein img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
+} */
+
+.index-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover !important;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 29%, rgba(0,0,0,0.65) 100%), url(https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/index-images/springmuscle.jpg) no-repeat center center scroll;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 11vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 11px;
+}
+/* 
+.thom-landing {
+  margin: 40px auto;
+  font-family: 'Futura', sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: -1px 1px 0 #41ba45,
+				  1px 1px 0 #c63d2b,
+				 1px -1px 0 #42afac,
+				-1px -1px 0 #c6c23f;
+}
+
+.thom-landing ~ h2 {
+    font-size: 60px;
+}
+
+
+.thomas-landing-banner { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(86,72,72,0.25) 100%), url("https://live.staticflickr.com/5087/5374560217_ef10d43e0d_o.jpg") no-repeat center center scroll;
+    background-size: cover !important;
+}
+
+
+.thomas-index-landing {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 0;
+    background-image: url("https://live.staticflickr.com/5087/5374560217_ef10d43e0d_o.jpg");
+    @include animation(slider-sm ease-in-out 30s both infinite): ;
+    @media (min-width: 32ems) {;
+    background-image: url../images/career.jpg);
+    @include animation(slider-lg ease-in-out 30s both infinite): ;
+    }
+; */
+/* .thomas-index-landing {
+background-image: url(https://live.staticflickr.com/5087/5374560217_ef10d43e0d_o.jpg)
+background-position-x: 50%
+background-position-y: 50%
+background-repeat-x
+background-repeat-y
+background-size: cover
+display block
+height 1293px
+position absolute
+top 0px
+width 1261px
+z-index 0
+} */
+
+
+
+.imgbox{
+  display: flex; 
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover; 
+}
+
+#img1{
+  position: absolute;
+  z-index: 3;
+  animation: xfade 15s -0s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#img2{
+  position: absolute;
+  z-index: 2;
+  animation: xfade 15s -5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#img3{
+  position: absolute;
+  z-index: 1;
+  animation: xfade 15s -10s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes xfade{
+
+     0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
