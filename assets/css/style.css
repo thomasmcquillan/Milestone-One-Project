@@ -47,6 +47,7 @@ a, a:hover, a:focus, a:active {
 
 .navbar-custom .navbar-nav .nav-item a {
     color: rgb(160, 158, 158);
+    font-size: 1.2rem;
 }
 
 .navbar-custom .navbar-nav .nav-item a:hover { 
@@ -79,9 +80,14 @@ h3, h4, h5{
     font-family: "Acumin-Pro", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(43, 43, 43);
     z-index: 1;           
+}
+
+.navbar-toggler span {
+    display: flex;
+    font-size: 1.2rem;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -141,12 +147,12 @@ h3, h4, h5{
     text-align: right;
     padding: 18vh 36px 33vh 0; 
     transition: all ease-in 50ms;
-    z-index: 2;
+    z-index: 1;
 }
 
 .navbar-custom .navbar-brand {
-    z-index: 99;
-    position: absolute;
+    z-index: 2;
+    position: fixed;
     left: 6vw;
     top: 14px;
 }
@@ -202,6 +208,13 @@ img {
 }
 
 /* ============================== Media Queries =============================== */
+
+@media (min-width: 768px) {
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-item a {
+        font-size: 1.5rem;
+    }
+}
 
 @media (min-width: 992px) {
 
