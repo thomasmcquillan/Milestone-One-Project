@@ -3,10 +3,14 @@
 [View the live website here.](https://thomasmcquillan.github.io/Milestone-One-Project/landing-page.html)
 
 This site is designed as a bespoke online portfolio for my photography.  An online presence is essential for artists and designers, offering a platform 
-from which to communicate their ideas and aesthetic style, while also exhibiting a mastery of their craft. Unlike your average commercial website, 
-artist sites often embrace a strategy of 'less-is-more'. Their work is left to speak for itself, rejecting  
+from which to communicate their ideas and aesthetic style, while also exhibiting a mastery of their craft. In contrast to many websites that are trying to 
+sell products or maintain visitors attention, artist sites often embrace a strategy of 'less-is-more'. The work is left to speak for itself, rejecting 
+modern baubles like pop-up modals, forms, icons or buttons.
 
->> Insert photo of mockups here!!
+
+The finished Home / Landing / Index page:
+
+![Home Page mockups, courtesy of amiresponsive.com](https://thomasmcquillan.github.io/assets/documentation/readme-image-assets/homepage-mockups-courtesy-of-amiresponsive.jpeg "Thomas McQuillan Portfolio Website")
 
 ## User Experience (UX)
 
@@ -28,7 +32,7 @@ artist sites often embrace a strategy of 'less-is-more'. Their work is left to s
 
         * As a first time visitor.. I would like page content to load quickly.
         
-        * As a first time visitor.. I don't want to worry about image-heavy websites draining my mobile data when visiting the site away from WIFI networks.
+        * As a first time visitor.. I don't want to worry about using up my mobile data when visiting a site with many image content when accessing the page while away from WIFI networks.
 
 
     * ### Returning Visitor Goals
@@ -73,19 +77,30 @@ artist sites often embrace a strategy of 'less-is-more'. Their work is left to s
 
     * While I chose to keep the navigation and pages white, I was keen to introduce some character in small splashes of color in certain page elements, including a custom scrollbar and link/toggle 'hover:' psuedo states. It may at first seem to betray my philosophy about keeping elements white to allow the photos space to breath. However, my rational is that any splashes or pops of colour are only introduced when interacting with a navigation element - at a time when your attention has already shifted away from the photographs. 
 
+![Thematic color choices](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/color-for-thematic-goals.jpeg "Thomas McQuillan's Portfolio Website")
+
+
 * ### Typography
     * Adobe Fonts Library was used to source all fonts used in the project. 
 
     * For all headings, links and the navbar-brand logo I selected the font-family Futura. Futura is considered a timeless classic of the font world, looking just as modern today as when it was released by The Bauer Type Foundry in 1927. Being a sans-serif typeface, Futura boasts a clean, modern look which makes it perfect for statement text such as logos, titles and headlines. I opted to also use it for my navigation menu items, as it lends them some weight, without appearing too blocky - due to the font-weight and size.
 
-    ### Imagery
+[Adobe Fonts - Acumin Pro Light](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/adobe-acumin-pro-light-font.jpeg "Adobe's Acumin Pro Light typeface, as used in Navigation menu and Brand")
+
+    * Despite my site being intentionally light in text elements, I was cognizant of the importance of not the just readability of body copy, but also the mood it lends to the site as a whole.
+
+* ### Imagery
     * All photographs are the work of the Artist / Developer.
 
 ## Wireframes
-* Home Page Wireframe - 'View'
-* Mobile Page Wireframe - 'View'
-* Contact Page Wireframe - 'View'
-etc..
+* The wireframes for the project were designed in Adobe XD. The site design has changed in key ways over the project - which is evidently a real and serious challenge when the developer is also the client. The desire to 
+get everything looking exactly as you would like can overwhelm and draw out the whole project. Such scope creep would usually be either impossible - or potentially very costly to the client. The cost in this case was born by
+myself in the extra hours, days and weeks it added to the process. However, I wanted everything just right so I was willing to take the time to get there. The development itself was relatively straightforward in comparison to 
+the aesthetic design decisions.
+
+* Below is an image of the site as a whole, as conceived at the project outset. To see each page and element in greater detail, please vist the linked files here:
+
+![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png "Wireframes for Thomas McQuillan's Portfolio Website")
 
 ## Features
 * The site is responsive across all device sizes and viewports, from the very small iPhone-SE (original) to 27" 4k desktop monitors. 
@@ -115,18 +130,12 @@ etc..
 8. [Adobe XD](https://www.adobe.com/products/xd.html)
 * Adobe XD was used to create the wireframes for the initial design, to show the layout and basic elements of the site.
 
-
-
-
 ## Testing
 
 * ### W3C Markup Validator W3C CSS Validator
 
     * [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - (post linked results from github here)
     * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - (linked results)
-
-
-
 
 * ### Testing User Stories from User Experience (UX) Section 
 
@@ -228,13 +237,15 @@ etc..
         modern artist websites and a playful space of greater character.
 
 ## Further Testing
-* ... ..
-* .. ...
-* .. ...
+* The site was tested on all major browsers including Google Chrome, Mozilla Firefox, Internet Explorer, Microsoft Edge and Safari.
+* The site was viewed on a number of devices, each with varied display sizes, resolutions and viewport-widths. These included devices as small as the original iPhoneSE, the larger iPhoneXR, an iPadPro, MacBook Pro 13" & 16" - right up to a 27" 4k monitor.
+* Extensive testing was carried out to check that all navigation links to site pages, external sites and downloadable content were functioning correctly.
+* Close scrutiny was paid to each page to ensure that no spelling errors or other inconsistencies were present.
+* Friends, family members and the slack community were all asked to look through the site and associated documentation to give feedback and report on any bugs. 
 
 ## Known Bugs
-* .. ...
-* ... ..
+* The page content sometimes appears momentarily above the navbar when scrolling quickly up the page from the bottom on an iPhone SE. I checked it on an ipadPro where it happened as well.
+However, I was able to force the same behaviour on a number of other websites so must be a browser / application quirk.
 
 # Deployment
 
