@@ -89,13 +89,13 @@ The finished Home / Landing / Index page:
 
     * For all headings, links and the navbar-brand logo I selected the font-family Acumin Pro. Acumin pro has a timeless look, and has a lovely lightness to it. I originally was going to use Futura, but in the end decided it was too heavy and blocky.
 
-<p align="center"><img width="60%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/adobe-acumin.png" alt="Adobe Acumin Pro Light used in navigation menu items and brand">
+<p align="center"><img width="500px" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/adobe-acumin.png" alt="Adobe Acumin Pro Light used in navigation menu items and brand">
 </p>
 
-    * Despite the client's desire not too have screeds of text elements, I was also cognizant of the importance of not the just readability of body copy, but also the mood it lends to the site as a whole.
+* Despite the client's desire not too have screeds of text elements, I was also cognizant of the importance of not the just readability of body copy, but also the mood it lends to the site as a whole.
 
 * ### Imagery
-    * All photographs are the work of the Artist / Developer.
+    * All photographs are the work of the Artist / Developer. 
 
 ## Wireframes
 * I made the wireframes for the project using Adobe XD. The website design has evolved over the course of the project.
