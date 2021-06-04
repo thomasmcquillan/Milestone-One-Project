@@ -83,9 +83,9 @@ The finished Home / Landing / Index page:
 * ### Typography
     * Adobe Fonts Library was used to source all fonts used in the project. 
 
-    * For all headings, links and the navbar-brand logo I selected the font-family Futura. Futura is considered a timeless classic of the font world, looking just as modern today as when it was released by The Bauer Type Foundry in 1927. Being a sans-serif typeface, Futura boasts a clean, modern look which makes it perfect for statement text such as logos, titles and headlines. I opted to also use it for my navigation menu items, as it lends them some weight, without appearing too blocky - due to the font-weight and size.
+    * For all headings, links and the navbar-brand logo I selected the font-family Acumin Pro. Acumin pro has a timeless look, and has a lovely lightness to it. I originally was going to use Futura, but in the end decided it was too heavy and blocky.
 
-*   ![Adobe Fonts - Acumin Pro Light](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/adobe-acumin-pro-light-font.jpeg) "Adobe's Acumin Pro Light typeface, as used in Navigation menu and Brand")
+*   ![Adobe Fonts Acumin Pro Light](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/adobe-acumin-pro-light-font.jpeg "Adobe Acumin Pro Light, as used in Navigation menu and Brand")
 
     * Despite my site being intentionally light in text elements, I was cognizant of the importance of not the just readability of body copy, but also the mood it lends to the site as a whole.
 
@@ -100,7 +100,7 @@ the aesthetic design decisions.
 
 * Below is an image of the site as a whole, as conceived at the project outset. To see each page and element in greater detail, please vist the linked files here:
 
-*   ![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png) "Wireframes for Thomas McQuillan's Portfolio Website")
+*   ![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png "Wireframes for Thomas McQuillan's Portfolio Website")
 
 ## Features
 * The site is responsive across all device sizes and viewports, from the very small iPhone-SE (original) to 27" 4k desktop monitors. 
@@ -134,8 +134,13 @@ the aesthetic design decisions.
 
 * ### W3C Markup Validator W3C CSS Validator
 
-    * [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - (post linked results from github here)
+    * [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
+        * [Results:](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthomasmcquillan.github.io%2FMilestone-One-Project%2Findex.html)
+     
     * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - (linked results)
+        
+        * [Results:](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthomasmcquillan.github.io%2FMilestone-One-Project%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 * ### Testing User Stories from User Experience (UX) Section 
 
@@ -237,7 +242,7 @@ the aesthetic design decisions.
         modern artist websites and a playful space of greater character.
 
 ## Further Testing
-* The site was tested on all major browsers including Google Chrome, Mozilla Firefox, Internet Explorer, Microsoft Edge and Safari.
+* The site was tested on various browsers including Google Chrome, Mozilla Firefox and Safari.
 * The site was viewed on a number of devices, each with varied display sizes, resolutions and viewport-widths. These included devices as small as the original iPhoneSE, the larger iPhoneXR, an iPadPro, MacBook Pro 13" & 16" - right up to a 27" 4k monitor.
 * Extensive testing was carried out to check that all navigation links to site pages, external sites and downloadable content were functioning correctly.
 * Close scrutiny was paid to each page to ensure that no spelling errors or other inconsistencies were present.
@@ -280,24 +285,28 @@ However, I was able to force the same behaviour on a number of other websites so
 
 ## Making a Local Clone
 
-1. ..
+============= yet to finish this section..  =================
 
 
 See [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for pictures and further information describing the process.
 
+
 # Credits
+
+
 
 ## Code
 
-...
+
 CSS Tricks;
 [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+[Kevin Powell and his wonderful sharing of CSS knowledge. His codepen account:](https://codepen.io/kevinpowell/pens/popular)
 
 ..
 ## Content
 
 
-...
 
 ## Media 
 
@@ -310,3 +319,5 @@ CSS Tricks;
 * My thanks to the Code Institute Slack community for their feedback.
 
 * Thanks to the Code Institute Tutors for their advice at the outset of the project.
+
+* Huge thanks and respect to my wife and two boys for their support.
