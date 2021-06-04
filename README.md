@@ -10,7 +10,7 @@ modern baubles like pop-up modals, forms, icons or buttons.
 
 The finished Home / Landing / Index page:
 
-![Home Page mockups, courtesy of amiresponsive.com](https://thomasmcquillan.github.io/assets/documentation/readme-image-assets/homepage-mockups-courtesy-of-amiresponsive.jpeg "Thomas McQuillan Portfolio Website")
+![Home Page mockups, courtesy of amiresponsive.com](https://thomasmcquillan.github.io/assets/documentation/readme-image-assets/homepage-mockups.jpeg) "Thomas McQuillan Portfolio Website")
 
 ## User Experience (UX)
 
@@ -77,7 +77,7 @@ The finished Home / Landing / Index page:
 
     * While I chose to keep the navigation and pages white, I was keen to introduce some character in small splashes of color in certain page elements, including a custom scrollbar and link/toggle 'hover:' psuedo states. It may at first seem to betray my philosophy about keeping elements white to allow the photos space to breath. However, my rational is that any splashes or pops of colour are only introduced when interacting with a navigation element - at a time when your attention has already shifted away from the photographs. 
 
-![Thematic color choices](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/color-for-thematic-goals.jpeg "Thomas McQuillan's Portfolio Website")
+*   ![Thematic color choices](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/color-for-thematic-goals.jpeg "Thomas McQuillan's Portfolio Website")
 
 
 * ### Typography
@@ -85,7 +85,7 @@ The finished Home / Landing / Index page:
 
     * For all headings, links and the navbar-brand logo I selected the font-family Futura. Futura is considered a timeless classic of the font world, looking just as modern today as when it was released by The Bauer Type Foundry in 1927. Being a sans-serif typeface, Futura boasts a clean, modern look which makes it perfect for statement text such as logos, titles and headlines. I opted to also use it for my navigation menu items, as it lends them some weight, without appearing too blocky - due to the font-weight and size.
 
-[Adobe Fonts - Acumin Pro Light](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/adobe-acumin-pro-light-font.jpeg "Adobe's Acumin Pro Light typeface, as used in Navigation menu and Brand")
+*   ![Adobe Fonts - Acumin Pro Light](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/adobe-acumin-pro-light-font.jpeg) "Adobe's Acumin Pro Light typeface, as used in Navigation menu and Brand")
 
     * Despite my site being intentionally light in text elements, I was cognizant of the importance of not the just readability of body copy, but also the mood it lends to the site as a whole.
 
@@ -100,7 +100,7 @@ the aesthetic design decisions.
 
 * Below is an image of the site as a whole, as conceived at the project outset. To see each page and element in greater detail, please vist the linked files here:
 
-![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png "Wireframes for Thomas McQuillan's Portfolio Website")
+*   ![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png) "Wireframes for Thomas McQuillan's Portfolio Website")
 
 ## Features
 * The site is responsive across all device sizes and viewports, from the very small iPhone-SE (original) to 27" 4k desktop monitors. 
@@ -253,26 +253,35 @@ However, I was able to force the same behaviour on a number of other websites so
 
 ### Project was deployed to GitHub Pages using the following method..
 
-1. .. ....
-2. ... ..
-3. .. ...
-...
+1. Visit GitHub.com
+2. Log in to my account.
+3. Click "Repositories".
+4. Click "Milestone-One-Project"
+5. Click on "Settings".
+6. Scroll down to the "GitHub Pages" section.
+7. Under "Source" heading, there is a dropdown menu. Click "None". Then select the "Master Branch".
+8. Refresh page. Scroll down to "GitHub Pages" section.
+9. If everything went well you will see the message "Your site is ready to be published at _______".
+10. Great, the website is deployed!
 
 ## Forking the GitHub repository
 
-1. .. 
-2. ...
-3. ..
+1. Visit GitHub.com and log in to my account.
+
+2. Select ‘Repositories’.
+
+3. Select ‘Milestone-One-Project’
+
+4. Select ‘Clone or download’.
+
+5. Select ‘Download Zip’.
+
+6. 
 
 ## Making a Local Clone
 
 1. ..
-2. ..
-3. ..
-4. ...
-5. ..
-6. .
-7. ..
+
 
 See [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for pictures and further information describing the process.
 
@@ -287,7 +296,6 @@ CSS Tricks;
 ..
 ## Content
 
-... 
 
 ...
 
@@ -297,7 +305,7 @@ CSS Tricks;
 
 ## Acknowledgements
 
-* I would like to thanks my Mentor for his honest feedback and guidance.
+* I would like to thanks my Mentor for his honest feedback, guidance and patience.
 
 * My thanks to the Code Institute Slack community for their feedback.
 
