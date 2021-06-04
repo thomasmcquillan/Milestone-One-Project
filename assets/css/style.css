@@ -76,11 +76,10 @@ h3, h4, h5{
 .nav-item a, .navbar-toggler,
 .nav-close-toggle,
 .navbar-custom .navbar-brand {
-    font-size: 26px;
     font-family: "Acumin-Pro", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: rgb(43, 43, 43);
     z-index: 1;           
 }
@@ -131,30 +130,35 @@ h3, h4, h5{
 
 .navbar-custom .navbar-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     background: rgb(234, 238, 238);
     width: 100%;
     height: 100%;
-    padding: 23vh 0 26vh 11vw; 
-    transition: all ease-in .3s;
+    text-align: right;
+    padding: 18vh 36px 33vh 0; 
+    transition: all ease-in 50ms;
     z-index: 2;
 }
 
 .navbar-custom .navbar-brand {
     z-index: 99;
-    margin: 0 auto 0 20px;
+    /* margin: 0 auto 0 16px; */
+    position: fixed;
+    left: 77px;
+    top: 14px;
 }
 
 .navbar-toggler {
     position: fixed;
-    right: 16px;
+    right: 36px;
+    top: 20px;
+    font-size: 1.5rem;
     border: none;
-    margin: 0 16px 0 auto;
-    z-index: 98;
+    z-index: 4;
 }
 
 /* ============================== Photo Styles =============================== */
@@ -205,8 +209,6 @@ img {
     nav {
         display: flex;
         flex-direction: column;
-        /* width: 88px; */
-        /* align-content: center; */
     }
 
     .navbar-custom .navbar-nav {
@@ -224,7 +226,6 @@ img {
     }
 
     .nav-item { 
-        /* background: none; */
         padding-right: 24px;
     }
 
