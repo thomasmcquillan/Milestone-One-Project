@@ -208,14 +208,24 @@ img {
 }
 
 .index-welcome-image-wrapper {
-    /* max-height: calc(100vh - 28vh); */
     display: grid;
     place-items: center;
-    height: calc(100vh - 68px);
+    /* height: calc(100vh - 68px); */
     position: absolute;
-    bottom: 0;
-
+    top: 100px;
 }
+
+.index img {
+     max-height: 80vh;
+}
+/* .index img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}  */
+
+
 
 /* ============================== Media Queries =============================== */
 
