@@ -288,28 +288,17 @@ the frames and am trying my hardest to make it longer and smoother  =*/
 
 
 #thom-index-slide-1 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/portal.jpg');
+    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/portal@2x.jpg');
 }
 
 #thom-index-slide-2 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/springmuscle.jpg');
+    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/springmuscle@2x.jpg');
 }
 
 #thom-index-slide-3 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/illusions_01.jpg');
+    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/illusions_01@2x.jpg');
 }
 
-#thom-index-slide-4 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/chimney.jpg');
-}
-
-#thom-index-slide-5 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/powder.jpg');
-}
-
-#thom-index-slide-6 {
-    background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/treelight.jpg');
-}
 
 .imgbox {
     display: flex; 
@@ -340,27 +329,6 @@ the frames and am trying my hardest to make it longer and smoother  =*/
     position: absolute;
     z-index: 14;
     animation: xfade 15s -10s infinite;
-    animation-timing-function: ease-in-out;
-    }
-
-    #thom-index-slide-4 {
-    position: absolute;
-    z-index: 13;
-    animation: xfade 15s -15s infinite;
-    animation-timing-function: ease-in-out;
-    }
-
-    #thom-index-slide-5 {
-    position: absolute;
-    z-index: 12;
-    animation: xfade 15s -20s infinite;
-    animation-timing-function: ease-in-out;
-    }
-
-    #thom-index-slide-6 {
-    position: absolute;
-    z-index: 11;
-    animation: xfade 15s -25s infinite;
     animation-timing-function: ease-in-out;
     }
 

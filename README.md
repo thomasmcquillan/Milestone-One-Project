@@ -1,6 +1,6 @@
 # Thomas McQuillan | Artist Website 
 
-[View the live website here.](https://thomasmcquillan.github.io/Milestone-One-Project/landing-page.html)
+[View the live website here.](https://thomasmcquillan.github.io/Milestone-One-Project/index.html)
 
 This site is designed as a bespoke online portfolio for my photography.  An online presence is essential for artists and designers, offering a platform 
 from which to communicate their ideas and aesthetic style, while also exhibiting a mastery of their craft. In contrast to many websites that are trying to 
@@ -11,7 +11,7 @@ modern baubles like pop-up modals, forms, icons or buttons.
 The finished Home / Landing / Index page:
 
 <p align="center">
-    <img width="100%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/homepage-mockups.jpeg" alt="mockups of site's home page showing responsivity">
+    <img width="100%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/mockups.png" alt="mockups of site's home page showing responsivity">
 </p>
 
 ## User Experience (UX)
