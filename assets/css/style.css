@@ -286,7 +286,6 @@ https://github.com/stephenscaff/keyframes-slider/blob/master/demo1.html
 However, it only had 3 slides and cycles very quickly so I have doubled
 the frames and am trying my hardest to make it longer and smoother  =*/
 
-
 #thom-index-slide-1 {
     background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/portal@2x.jpg');
 }
@@ -298,7 +297,6 @@ the frames and am trying my hardest to make it longer and smoother  =*/
 #thom-index-slide-3 {
     background-image: url('https://thomasmcquillan.github.io/Milestone-One-Project/assets/images/project-pages/suite-nothings/illusions_01@2x.jpg');
 }
-
 
 .imgbox {
     display: flex; 

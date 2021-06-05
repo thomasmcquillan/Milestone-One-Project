@@ -11,7 +11,7 @@ modern baubles like pop-up modals, forms, icons or buttons.
 The finished Home / Landing / Index page:
 
 <p align="center">
-    <img width="100%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/mockups.png" alt="mockups of site's home page showing responsivity">
+    <img width="100%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/mockups.png" alt="mockups of sites home page showing responsivity">
 </p>
 
 ## User Experience (UX)
@@ -75,6 +75,7 @@ The finished Home / Landing / Index page:
 ## Design
 
 * ### Colour Scheme
+
     * As the site is intended as a space for the appreciation of photography, pages function much like a gallery wall - adopting an off-white background, framed by a white navigation bar, with black name/logo and toggle button. The introduction of a subtle drop shadow separates the navbar from the page content without introducing an abrupt border or coloured navbar that would distract from the photographs. 
 
     * While I chose to keep the navigation and pages white, I was keen to introduce some character in small splashes of color in certain page elements, including a custom scrollbar and link/toggle 'hover:' psuedo states. It may at first seem to betray my philosophy about keeping elements white to allow the photos space to breath. However, my rational is that any splashes or pops of colour are only introduced when interacting with a navigation element - at a time when your attention has already shifted away from the photographs. 
@@ -104,13 +105,30 @@ The finished Home / Landing / Index page:
     the project. Scope creep is real, and can be costly - in dollars as a client.. and time as a developer. In the end I was willing to take
     the time to get things right.
 
-* The image below gives an overview of the site's structure, as conceived of at the beginning of the project. To see each page and element in greater detail, please vist the linked files here:
+* The image below gives an overview of the site's structure, as conceived of at the beginning of the project. 
 
 ![Wireframes as first conceived in Adobe XD](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-01-overview.png "Wireframes for Thomas McQuillan's Portfolio Website")
 
+*   Arriving at the homepage, the user is greeted with a large full screen image which transitions to a new one every several seconds.  The page, as with very many arist websites, is not demanding the users
+attention, but rather trying to spark curiosity and explore on their own.
+
+![Home Page](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-02-index.png)
+
+*   Clicking the Projects link will take visitor to a project gallery which will contain a number of galleries contained on the page for visitors to peruse and explore.
+
+![Projects Page](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-03-projects.png)
+
+* I had planned on having a for the contact page, but after successfully coding and styling it, I was unhappy with the look and feel of it.  Forms are undeniably convenient, but they
+don't belong on an artist website. Or at least, I have never come across one.  I also made an executive decision to remove my page that was going to be for buying prints.
+In the end I felt it was out of scope, and something to implement in the coming months.
+
+![Project galleris](https://thomas.mcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-07-project-galleries.png)
+
+
 ## Features
 * The site is responsive across all device sizes and viewports, from the very small iPhone-SE (original) to 27" 4k desktop monitors. 
-* The site's images have been created with responsivity as a primary goal to ensure photographs look their very best, while reducing loading times and data usage on mobile devices.
+* The majority of the site's images have been created with responsivity as a primary goal to ensure photographs look their very best, while reducing loading times and data usage on mobile devices. This was achieved throuugh
+the use of the srcset image delivery syntax.
 
 ## Technologies Used
 ### Languages Used
@@ -253,7 +271,18 @@ The finished Home / Landing / Index page:
 * The site was viewed on a number of devices, each with varied display sizes, resolutions and viewport-widths. These included devices as small as the original iPhoneSE, the larger iPhoneXR, an iPadPro, MacBook Pro 13" & 16" - right up to a 27" 4k monitor.
 * Extensive testing was carried out to check that all navigation links to site pages, external sites and downloadable content were functioning correctly.
 * Close scrutiny was paid to each page to ensure that no spelling errors or other inconsistencies were present.
-* Friends, family members and the slack community were all asked to look through the site and associated documentation to give feedback and report on any bugs. 
+* Friends and family members were asked to look through the site and associated documentation to give feedback and report on any bugs. 
+
+## Lighthouse Testing 
+* I had completed a number of performance, accessibility and best practices site assessments in the past week.  With the addition of various meta tags to the html head and alt and aria tags to content and navigation 
+elements I was able to consistently score in the 90s. However, given that I have added a number of extra image assets and moved things around a bit I decided it was appropriate to have another try.
+Interestingly the Index page which has a rotating slider animation was no problem for the simulated mobile test, even beating the desktop.  My the image elements on my latest project 
+gallery were entirely populated from custom scaled image assets that I exported in Photoshop.  These I delivered in an srcset. It was satisfying to see lighthouse race through the test
+for the new page.
+
+
+![Lighthouse performance and accessibility testing](https://thomasmcquillan.github.io/Milestone-One-Project/aassets/documentation/readme-image-assets/lighthouse-testing.jpg)
+
 
 ## Known Bugs
 * The page content sometimes appears momentarily above the navbar when scrolling quickly up the page from the bottom on an iPhone SE. I checked it on an ipadPro where it happened as well.
