@@ -342,10 +342,10 @@ Where I have borrowed snippets of code I have referenced this in comments above 
 
 [Super Simple Keyframe Slider, by Stephen Scaff](https://github.com/stephenscaff/keyframes-slider/blob/master/demo1.html)
 
-I didn't end up using it, but this hero-generator by 
+[I didn't end up using it, but this hero-generator by Sara Edo is very helpful:(https://hero-generator.netlify.app/)
 ## Content
 
-All content was produced my myself, the client and developer.
+All content was produced my myself, as the client and the developer/artist.
 
 ## Media 
 
@@ -359,4 +359,4 @@ All content was produced my myself, the client and developer.
 
 * Thanks to the Code Institute Tutors for their advice at the outset of the project.
 
-* Huge thanks and respect to my wife and two boys for their support.
+* Huge thanks and respect to my wife and two boys for their love and support.
