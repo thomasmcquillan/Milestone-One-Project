@@ -11,7 +11,7 @@ modern baubles like pop-up modals, forms, icons or buttons.
 The finished Home / Landing / Index page:
 
 <p align="center">
-    <img width="100%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/mockups.png" alt="mockups of sites home page showing responsivity">
+    <img width="100%" src="https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/thomas-mcquillan-live-website.png" alt="mockups of sites home page showing responsivity">
 </p>
 
 ## User Experience (UX)
