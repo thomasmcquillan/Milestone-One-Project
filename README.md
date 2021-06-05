@@ -122,7 +122,7 @@ attention, but rather trying to spark curiosity and explore on their own.
 don't belong on an artist website. Or at least, I have never come across one.  I also made an executive decision to remove my page that was going to be for buying prints.
 In the end I felt it was out of scope, and something to implement in the coming months.
 
-![Project galleris](https://thomas.mcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-07-project-galleries.png)
+![Project galleries](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/wireframes/wireframe-07-project-galleries.png)
 
 
 ## Features
