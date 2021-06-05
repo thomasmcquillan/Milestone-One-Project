@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html, body {
+    background: black;
+}
+
 /* -- Custom styled scrollbars, discovered in article by Sara Cope, then modified 
         for my project @ https://css-tricks.com/almanac/properties/s/scrollbar/  -- */
 
@@ -48,6 +52,7 @@ a, a:hover, a:focus, a:active {
 .navbar-custom .navbar-nav .nav-item a {
     color: rgb(160, 158, 158);
     font-size: 1.2rem;
+    font-size: 32px;
 }
 
 .navbar-custom .navbar-nav .nav-item a:hover { 
@@ -80,9 +85,9 @@ h3, h4, h5{
     font-family: "Acumin-Pro", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: rgb(43, 43, 43);
-    z-index: 1;           
+    z-index: 1;          
 }
 
 .navbar-toggler span {
@@ -110,24 +115,6 @@ h3, h4, h5{
     font-weight: 300;
 }
 
-.bold-block-text {
-    background: none;
-    margin: 40px auto;
-    font-family: 'Futura', sans-serif;
-    font-size: 80px;
-    line-height: 90px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    letter-spacing: 5px;
-    text-shadow: -1px 1px 0 #41ba45,
-                    1px 1px 0 #c63d2b,
-                    1px -1px 0 #42afac,
-                    -1px -1px 0 #c6c23f;
-}
-
-}
-
 /* ============================== Navigation Styles =============================== */
 
 .nav-wrapper {
@@ -143,7 +130,7 @@ h3, h4, h5{
 .navbar {
     display: flex;
     width: 100vw;
-    height: 72px;
+    height: 70px;
     position: fixed;
     flex-direction: column;
     justify-content: center;
@@ -156,16 +143,17 @@ h3, h4, h5{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    justify-items: center;
     position: fixed;
     top: 0;
     right: 0;
-    background: rgb(234, 238, 238);
+    background: rgba(234, 238, 238, 0.88);
     width: 100%;
     height: 100%;
-    text-align: right;
-    padding: 18vh 4vw 33vh 0; 
+    text-align: center;
+    padding: 30vh 0 36vh 0; 
     transition: all ease-in 300ms;
-    z-index: 1;
+    z-index: 3;
 }
 
 .navbar-custom .navbar-brand {
@@ -225,7 +213,6 @@ img {
                 0 16px 8px rgba(156, 156, 156, 0.01);
 }
 
-
 /* will remove this if I can tweak the slider to work well enough to replace it: */
 
 /* .index-welcome-image-wrapper {
@@ -242,10 +229,13 @@ img {
 
 /* ============================== Media Queries =============================== */
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+    .navbar-toggler span,
     .navbar-custom .navbar-brand,
     .navbar-custom .navbar-nav .nav-item a {
         font-size: 1.5rem;
+        font-size: 26px;
+        z-index: 4;
     }
 }
 
@@ -286,15 +276,42 @@ img {
         left: 164px;
     }
 }
- 
+
+.index-wrapper {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: auto auto;
+}
+
+.super-slider {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: 120px;
+    width: calc(100vw - 36px);
+    height: 100vw;
+}
+
+.slider-wrap {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    left: 0;
+}
 
 /* =======================================================================
 "Super Simple Slider" with keyframes by the brilliant Stephen Scaff at:
-
 https://github.com/stephenscaff/keyframes-slider/blob/master/demo1.html 
-
 However, it only had 3 slides and cycles very quickly so I have doubled
-
 the frames and am trying my hardest to make it longer and smoother  =*/
 
 
@@ -383,11 +400,3 @@ the frames and am trying my hardest to make it longer and smoother  =*/
     }
 
 /* ===================================================================== */
-
-
-/* @media (min-width: 1400px) {
-    .navbar-custom .navbar-brand {
-        position: flex;
-        margin-left: 20vw;
-        margin-right: auto;
-    } */

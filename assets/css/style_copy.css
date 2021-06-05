@@ -391,3 +391,63 @@ the frames and am trying my hardest to make it longer and smoother  =*/
         margin-left: 20vw;
         margin-right: auto;
     } */
+
+    .imgbox {
+    display: flex; 
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover; 
+}
+
+#thom-index-slide-1 {
+    position: absolute;
+    z-index: 16;
+    animation: xfade 30s -0s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#thom-index-slide-2 {
+    position: absolute;
+    z-index: 15;
+    animation: xfade 30s -5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#thom-index-slide-3 {
+    position: absolute;
+    z-index: 14;
+    animation: xfade 30s -10s infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    #thom-index-slide-4 {
+    position: absolute;
+    z-index: 13;
+    animation: xfade 30s -15s infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    #thom-index-slide-5 {
+    position: absolute;
+    z-index: 12;
+    animation: xfade 30s -20s infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    #thom-index-slide-6 {
+    position: absolute;
+    z-index: 11;
+    animation: xfade 30s -25s infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    @keyframes xfade{
+
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+        33% {opacity: 1;}
+        53% {opacity: 0;}
+        100% {opacity: 0;}
+    }
