@@ -181,14 +181,6 @@ h3, h4, h5{
     width: 100%;
 }
 
-/* .photo-wrap {
-    margin-top: 70px;
-}
-
-.gallery-frame {
-    padding-top: 6vw;
-} */
-
 .photo-frame {
     padding-top: 200px;
     display: flex;
@@ -265,33 +257,27 @@ img {
 
 .index-wrapper {
     display: flex;
-    position: absolute;
     top: 80px;
-    left: 0;
     width: 100vw;
-    height: 100vh;
     margin: auto auto;
 }
 
 .super-slider {
-    display: block;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-self: center;
-    position: absolute;
-    top: 120px;
+    align-content: center;
     width: calc(100vw - 36px);
     height: 100vw;
 }
 
 .slider-wrap {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    position: absolute;
     width: 100vw;
     height: 100vw;
-    left: 0;
 }
 
 /* =======================================================================
@@ -328,10 +314,12 @@ the frames and am trying my hardest to make it longer and smoother  =*/
 .imgbox {
     display: flex; 
     align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
     background-position: center center;
     background-size: cover; 
+    margin: auto auto;
 }
 
 #thom-index-slide-1 {
