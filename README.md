@@ -281,7 +281,7 @@ gallery were entirely populated from custom scaled image assets that I exported 
 for the new page.
 
 
-![Lighthouse performance and accessibility testing](https://thomasmcquillan.github.io/Milestone-One-Project/aassets/documentation/readme-image-assets/lighthouse-testing.jpg)
+![Lighthouse performance and accessibility testing](https://thomasmcquillan.github.io/Milestone-One-Project/assets/documentation/readme-image-assets/lighthouse-testing.jpg)
 
 
 ## Known Bugs
@@ -303,13 +303,12 @@ However, I was able to force the same behaviour on a number of other websites so
 7. Under "Source" heading, there is a dropdown menu. Click "None". Then select the "Master Branch".
 8. Refresh page. Scroll down to "GitHub Pages" section.
 9. If everything went well you will see the message "Your site is ready to be published at _______".
-10. Great, the website is deployed!
 
 ## Forking the GitHub repository
 
 1. Visit GitHub.com and log in to my account.
 
-2. Select ‘Repositories’.
+2. Under "Repositories" select the project you wish to fork.
 
 3. Select ‘Milestone-One-Project’
 
@@ -317,33 +316,36 @@ However, I was able to force the same behaviour on a number of other websites so
 
 5. Select ‘Download Zip’.
 
-6. 
+6. Open the project in your favourite editor and open a terminal window.
+
+7. Use the 'git clone' comman in terminal followed by the copied git URL.
+
+8. A cloned copy of the project will be created locally on your computer.
+
 
 ## Making a Local Clone
-
-============= yet to finish this section..  =================
-
 
 See [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for pictures and further information describing the process.
 
 
 # Credits
 
-
+Where I have borrowed snippets of code I have referenced this in comments above the borrowed code, crediting the author and source.
 
 ## Code
 
+[CSS Tricks have been brilliant resource as a new developer](https://css-tricks.com/)
 
-CSS Tricks;
 [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
 [Kevin Powell and his wonderful sharing of CSS knowledge. His codepen account:](https://codepen.io/kevinpowell/pens/popular)
 
 [Super Simple Keyframe Slider, by Stephen Scaff](https://github.com/stephenscaff/keyframes-slider/blob/master/demo1.html)
-..
+
+I didn't end up using it, but this hero-generator by 
 ## Content
 
-
+All content was produced my myself, the client and developer.
 
 ## Media 
 
